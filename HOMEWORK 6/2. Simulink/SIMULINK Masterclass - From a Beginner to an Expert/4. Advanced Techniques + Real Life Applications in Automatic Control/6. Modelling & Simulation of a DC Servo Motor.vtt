@@ -1,0 +1,325 @@
+WEBVTT
+
+00:00.760 --> 00:03.920
+Modelling and simulation of a DC servo motor.
+
+00:05.410 --> 00:13.490
+So first what is it easy servo motor and you see several motor is as simple a DC motor.
+
+00:13.580 --> 00:19.340
+Plus what we call several mechanism servo mechanism is used to control the output of the DC motor
+
+00:22.810 --> 00:25.280
+from your electric class.
+
+00:25.420 --> 00:32.130
+We have here what we call state or the state or produces CONSTANT MAGNETIC FIELD And we have here a
+
+00:32.170 --> 00:34.070
+router which is a coil.
+
+00:34.180 --> 00:40.660
+Once the current flows inside this coil an electromagnetic force is induced according to law and slow
+
+00:41.230 --> 00:44.650
+and the coil starts to rotate.
+
+00:44.830 --> 00:49.300
+Very simple.
+
+00:49.600 --> 00:52.450
+So what is the servo mechanism.
+
+00:52.540 --> 00:57.370
+First we have years of two circuits of the DC motor.
+
+00:57.370 --> 01:05.110
+We have what we call our metro circuit which is input voltage and we have resistance and then inductor
+
+01:05.890 --> 01:12.720
+we have Becky MF and this is the shaft of the motor which is connected to another shaft towards output.
+
+01:12.750 --> 01:19.270
+There may be for example gears ends output shaft has and there she is a and then been coefficient of
+
+01:19.270 --> 01:27.490
+B so we have a Ludes owns a shaft legs and their sheer force and to them being force the torque produces
+
+01:27.520 --> 01:33.610
+on the shaft is proportional to the current flows inside the circuit and we have here is a field circuit.
+
+01:33.610 --> 01:39.400
+You are not interested into the field circuit because we will use our motor circuit as a control process
+
+01:40.090 --> 01:44.210
+in order to control the output of this DC motor.
+
+01:44.210 --> 01:52.060
+Based on Zane wood which means what is the voltage you need to supply it to this DC motor in order to
+
+01:52.060 --> 01:54.440
+have certain high speed or a certain position.
+
+01:54.520 --> 01:58.890
+We use the servo mechanism so we have here our DC motor.
+
+01:58.960 --> 02:02.440
+This is the shaft of the DC motor and we have here two gears.
+
+02:02.510 --> 02:03.830
+There is odd wood shaft.
+
+02:03.880 --> 02:10.450
+We put the sensor on this output shaft like a potential meter in order to sense for example the speed
+
+02:10.450 --> 02:11.210
+of this shaft.
+
+02:11.240 --> 02:17.590
+The potential meter is converting is this a speed signal into a voltage signal and we feedback this
+
+02:17.590 --> 02:20.380
+voltage signal in amplifier.
+
+02:20.710 --> 02:23.990
+We have here also an input from any source.
+
+02:23.980 --> 02:30.210
+The difference between the output and the input voltages is amplified and this is error and is feeding
+
+02:30.230 --> 02:37.540
+back to the control unit of the DC motor which is placed on this signal correct is on but of that you
+
+02:37.540 --> 02:41.020
+see motor based on the application or is a desired output.
+
+02:41.470 --> 02:48.190
+So we have three main components here we have the control unit all the work is done inside this control
+
+02:48.190 --> 02:55.540
+unit we have output sensor which is for example potential meter and we have a feedback signal so let's
+
+02:55.540 --> 03:03.400
+see the most medical modelling of the DC motor by applying care should slow on the circuit.
+
+03:03.400 --> 03:12.580
+We have the input voltage or the reference input here V equals to r plus l i dot plus the back E and
+
+03:12.610 --> 03:20.440
+F E and the back IMF is proportional to the speed of the shaft so equals to a constant we call K.B.
+
+03:20.760 --> 03:27.730
+times see to that that work is proportional to the current flows inside the circuit so torque equals
+
+03:27.730 --> 03:35.730
+to Katy Times ie and from the free body diagram of the output shaft we have to work equals 2 and their
+
+03:35.750 --> 03:43.900
+shallow GC A lot plus then being lowered b c the load by taking a less transformation of these four
+
+03:43.900 --> 03:53.180
+equations we have V S equals two ie times are plus S L plus Becky M F Becky M F equals two Coniston
+
+03:53.200 --> 03:59.630
+key B times C to that and actually I've kept C that up because I won't are going to be a velocity in
+
+03:59.650 --> 04:07.330
+my position you can replace C a lot by Omega for example if you'll get confused we have to work equals
+
+04:07.330 --> 04:14.920
+to Katy Times I and we have to work equals to see the other times J as plus B so the input is this voltage
+
+04:15.010 --> 04:21.250
+and the output is a seat a lot as an assignment I want you to draw the block diagram of these equations
+
+04:21.680 --> 04:27.640
+the input is V and the output is see the dot and you will find the answer and as domain modelling of
+
+04:27.640 --> 04:28.480
+the DC motor
+
+04:33.630 --> 04:41.790
+so how to model this DC motor using Samuel link I have arranged the motor equations to be like this
+
+04:43.080 --> 04:52.230
+I thought equals to one over l times V minus I R minus E so I will start by signal I thought I will
+
+04:52.230 --> 04:56.760
+integrate the signal first time in order to have I and I will feed I.
+
+04:56.760 --> 05:05.040
+Times are back and this signal would be minus the Becky M F plus the input voltage to producers I idled
+
+05:06.520 --> 05:12.690
+by producing GUI you can multiplied by Katie in order to have the talk and from the to work you can
+
+05:12.690 --> 05:17.970
+have see the double lot and from sea level a lot you can have see the lot and feedback see the dot in
+
+05:17.970 --> 05:23.640
+order to have the back IMF is very simple and when you look at the symbol link you will understand more
+
+05:24.030 --> 05:30.910
+so let's move to the symbol link I've created a new model and the semi link I have m file which contains
+
+05:30.910 --> 05:37.440
+the different values for the different variables we have years of resistance we have inductor we have
+
+05:37.440 --> 05:43.380
+the kind of son Katie K.B. and we have them in coefficients and in their shows the shaft
+
+05:46.630 --> 05:54.810
+so from commonly use block I will add the scoop gain and some point
+
+05:59.050 --> 06:06.640
+and from continuous I will end and integrate integrator and from sources I will add a constant for example
+
+06:13.990 --> 06:15.310
+let's arrange these blocks
+
+06:20.240 --> 06:21.440
+leads is a scoop
+
+06:24.350 --> 06:30.630
+so by looking at the equation we have here is a signal I dot
+
+06:34.810 --> 06:40.060
+this is the signal light dot so I will type I thought
+
+06:43.580 --> 06:53.890
+by integrating I dot for the first time we will have I so the signal here is the current I multiplied
+
+06:53.890 --> 06:58.210
+by the resistance I would flip this block
+
+07:01.820 --> 07:02.780
+and this is r
+
+07:14.110 --> 07:19.390
+from the second equation if we multiplied ie by Coniston Kate we will produce a talk.
+
+07:19.510 --> 07:22.060
+So I will copy this block and flip
+
+07:24.780 --> 07:25.890
+this is Katie
+
+07:35.470 --> 07:42.590
+ends up with signal here is tea or is at work from the third equation.
+
+07:42.640 --> 07:50.380
+The talk signal minus B C the dot plus one over J produces a seat to the bill but so this is a summation
+
+07:50.380 --> 07:50.880
+point
+
+07:57.110 --> 08:04.450
+I would keep it like that and we have to work in plus and see to love a lot of minus
+
+08:07.320 --> 08:18.250
+czar but of the signal would be multiplied by one over J So I would call this block here and this is
+
+08:18.250 --> 08:19.020
+one over J
+
+08:25.610 --> 08:28.280
+to produce C to the ballot.
+
+08:28.400 --> 08:34.130
+So if I integrated the signal of C that I will look for the first time it will produce a seat about
+
+08:35.470 --> 08:39.510
+that's fit to view.
+
+08:39.800 --> 08:40.700
+This is here
+
+08:43.910 --> 08:47.730
+theta or up a lot.
+
+08:52.700 --> 08:59.730
+And the integration is a citadel which is my output so I will use a scoop in order to please output.
+
+08:59.860 --> 09:03.010
+This is theta dot
+
+09:05.900 --> 09:12.570
+and ppl looking at the third equation say the dot is multiplied by B.
+
+09:13.040 --> 09:17.620
+So I will copy this block and this is B
+
+09:20.780 --> 09:29.030
+and talk minus p c to dot times 1 over J produces a C to double dot
+
+09:32.000 --> 09:33.440
+again from the last equation
+
+09:37.780 --> 09:47.210
+C to that is multiplied by so I will Kobe's this block just right click and drag it
+
+09:51.060 --> 09:54.200
+and I will do the wearing.
+
+09:54.290 --> 09:55.430
+This is P.
+
+09:58.170 --> 10:00.530
+And I will add the submission point.
+
+10:02.190 --> 10:04.410
+So I will copy this.
+
+10:04.410 --> 10:15.730
+This for example here they'll make a rectangle and I will add three signs plus sign for the input minus
+
+10:15.730 --> 10:19.780
+signs for I or a minus sign for Peck IMF.
+
+10:22.640 --> 10:30.380
+Sorry this is K.B. so seat of the times KP produces the back Bank IMF
+
+10:33.380 --> 10:39.940
+is fit to view I would enlarge this.
+
+10:40.020 --> 10:47.000
+This is the same signal maybe a Coniston signal of like 5
+
+10:50.600 --> 10:55.740
+and this is a Bank IMF and this is all I or
+
+11:02.710 --> 11:08.020
+ends odd would signal of this summing point is multiplied by
+
+11:11.810 --> 11:12.740
+one over L
+
+11:16.510 --> 11:17.320
+to produce.
+
+11:17.320 --> 11:17.950
+I dot
+
+11:22.820 --> 11:23.160
+now.
+
+11:23.200 --> 11:31.110
+We have completed our model so I can earn my model now it will take some time
+
+11:39.040 --> 11:52.790
+you can track the simulation time from here so we are at that time equals to 5.5.
+
+11:53.190 --> 11:53.850
+Now we are done.
+
+11:53.880 --> 11:58.890
+I can double click here on the scoop in order to seize the output of the system
+
+12:04.240 --> 12:05.930
+with scale.
+
+12:06.450 --> 12:10.840
+So this is output velocity was time.
+
+12:10.890 --> 12:13.650
+Thank you guys for watching and I will see you in the next video.

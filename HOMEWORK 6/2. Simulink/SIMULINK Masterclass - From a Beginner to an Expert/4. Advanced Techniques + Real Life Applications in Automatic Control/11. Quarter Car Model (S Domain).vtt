@@ -1,0 +1,196 @@
+WEBVTT
+
+00:00.420 --> 00:01.640
+Welcome back guys.
+
+00:01.650 --> 00:06.000
+In this video we are going to continue our problem which is of course our car model.
+
+00:06.210 --> 00:07.790
+But this time an to me.
+
+00:07.800 --> 00:09.870
+So let's get it started.
+
+00:09.870 --> 00:15.950
+These are the equation of motion of the course record model from the previous review by balancing M.S.
+
+00:15.960 --> 00:23.060
+we have the equation M.S. why see that a lot plus C1 y c dot plus key one Y C by balancing m s.
+
+00:23.070 --> 00:29.760
+We have the equation M S Y as double dog plus C1 y s dot plus key one or key two plus key one times
+
+00:29.760 --> 00:37.890
+Y S equals two C1 why is he dots plus key one Y C plus K two times the input x so we need to take plus
+
+00:37.890 --> 00:43.980
+transformation of both equation so I want you to pose a video and a star typing equation of motions
+
+00:43.980 --> 00:47.000
+in s domain and compare them with my equations.
+
+00:48.620 --> 00:49.930
+Welcome back guys.
+
+00:49.970 --> 01:01.550
+So the equation of motions in his domain are Y C over Y S equals to C1 s plus k 1 over MCO squared plus
+
+01:01.550 --> 01:11.540
+C S plus k 1 the second equation y as equals 2 y c times C one s plus key 1 over M S A squared plus
+
+01:11.540 --> 01:21.620
+C1 s plus key one plus key two plus X times K two times m s s s squared plus C1 s plus q on plus K too.
+
+01:21.650 --> 01:27.080
+So in order to model this system I will add three times for function the first transfer function is
+
+01:27.080 --> 01:34.880
+this function and by multiplying this transfer function times a signal y s we will have Y C or the response
+
+01:34.880 --> 01:41.030
+of the Chelsea we can take the response of the Chelsea and multiply it again by this transfer function
+
+01:41.240 --> 01:43.910
+add them to say input x time.
+
+01:44.030 --> 01:51.110
+This transfer function and this will produce Y S which will be fitted to produce Y C and so on.
+
+01:51.110 --> 01:58.640
+So let's see this on the semi link I have created a new model so let's as a different blocks from block
+
+01:58.640 --> 02:10.460
+library from continuous air transfer function right click et on titled From commonly use blocks I will
+
+02:10.460 --> 02:14.750
+add some and I will add scoop
+
+02:17.460 --> 02:19.980
+and from sources I will add step function
+
+02:25.220 --> 02:28.880
+we have three transfer functions so I will copy this transfer function three times
+
+02:33.300 --> 02:40.200
+and I will show the response of the Chelsea and the suspension system so I will copy scoop block twice
+
+02:45.670 --> 02:52.370
+remembers that I have this file which contains the values of the different parameter M.C. MSE 1 C1 key
+
+02:52.370 --> 02:55.670
+to first of all I will.
+
+02:55.720 --> 02:58.860
+Whereas this transfer function to the school block.
+
+02:59.300 --> 03:08.180
+So this is why I see this as a transfer function c 1 s plus key 1 over M.C. s squared plus C1 s plus
+
+03:08.180 --> 03:15.850
+k 1 so double click the numerator is C1
+
+03:18.480 --> 03:19.320
+and k 1
+
+03:23.170 --> 03:24.430
+the denominator is
+
+03:27.070 --> 03:37.910
+M.S. c 1 Q1 OK.
+
+03:38.150 --> 03:44.540
+So now we have added the transfer function C1 s plus k 1 over MSE a squared plus C1 plus s 1
+
+03:49.870 --> 04:00.160
+this signal is Y C so I will feed the signal pack and multiply it to another transfer function but first
+
+04:00.160 --> 04:04.710
+I need to flip this plug flip
+
+04:08.090 --> 04:12.740
+when you look at the second equation you will see is that why C is multiplied by this transfer function
+
+04:16.110 --> 04:20.760
+C1 K1 denominator
+
+04:23.490 --> 04:26.170
+M S C1
+
+04:29.050 --> 04:31.570
+key one plus key two inside brackets
+
+04:34.590 --> 04:35.010
+OK
+
+04:40.490 --> 04:42.690
+on move this here and this one here
+
+04:47.680 --> 04:55.450
+I'll move to some Michigan block here the step and book which is x is multiply it to the transfer function
+
+04:57.290 --> 04:57.950
+which is
+
+05:01.190 --> 05:08.380
+key to numerator over the denominator M.S.
+
+05:10.890 --> 05:11.480
+C1
+
+05:15.550 --> 05:18.550
+key one plus key to
+
+05:26.290 --> 05:29.510
+will arrange my model and expenses
+
+05:38.010 --> 05:39.930
+moves this here.
+
+05:39.930 --> 05:42.780
+Whereas the signal here I will leave this one
+
+05:45.960 --> 05:55.100
+and wire as a signal here so as input x is multiplied by this transfer function Y C is multiplied by
+
+05:55.150 --> 06:04.710
+this transfer function and Zi are added together here to produce y s y is now is multiplied by as this
+
+06:04.710 --> 06:15.510
+block to produce Y C and I have added a scoop to plot the signal of Y C and from this a scoop I can
+
+06:15.600 --> 06:19.870
+take a signal from here to plot y yes.
+
+06:20.490 --> 06:27.000
+Now my model is ready on I have a set of different values of these variables so I can run my model the
+
+06:27.000 --> 06:37.120
+time here is 10 seconds so run let's see the response of the suspension movement this is the response
+
+06:37.240 --> 06:46.860
+as you can see I have some oscillations until damped and this is a response of the Chelsea again it's
+
+06:46.950 --> 07:01.120
+up to one point four I forgot to set the step number two certainly millimeters so wrong again.
+
+07:01.230 --> 07:06.420
+So now it's up to almost forty five and then the movement is damped
+
+07:10.900 --> 07:19.190
+again degrees the value of the number make it six for example and from back to our model and Ron
+
+07:25.030 --> 07:31.120
+now is oscillation as you can see are increased because we have reduced the dumping coefficient
+
+07:33.770 --> 07:41.920
+and this is the response of the HSC can actually compares the results from using elsewhere function
+
+07:42.430 --> 07:48.460
+to the results from modelling in time domain as I have mentioned in the video of the modelling the spring
+
+07:48.460 --> 07:50.020
+number system.
+
+07:50.020 --> 07:52.840
+Thank you guys for watching and see you in the next tweet you.

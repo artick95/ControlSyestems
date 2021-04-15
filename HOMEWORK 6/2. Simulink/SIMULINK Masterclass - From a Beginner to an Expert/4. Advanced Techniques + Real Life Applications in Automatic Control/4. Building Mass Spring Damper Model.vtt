@@ -1,0 +1,190 @@
+WEBVTT
+
+00:01.690 --> 00:06.850
+Let's see another example which will help you to get familiar with smuggling and also will enhance your
+
+00:06.850 --> 00:09.340
+thinking in modeling problems.
+
+00:09.340 --> 00:15.150
+This is a spring damper system from the previous section was a but here is a displacement x.
+
+00:15.280 --> 00:21.860
+This displacement moves as a spring K and as a result the mass moves a displacement y and also there
+
+00:21.860 --> 00:28.240
+is a number which resist the motion we have drive the equation of system as m y the blot blasts see
+
+00:28.240 --> 00:36.260
+white dot plus K Y equals two K X. What we are going to do in this video is building the symbol link
+
+00:36.280 --> 00:39.490
+multiple of this system and simulated with an input.
+
+00:39.490 --> 00:46.170
+For example a step inputs in order to build this model we need first to think how to relate to output
+
+00:46.180 --> 00:48.010
+to the input of this system.
+
+00:48.160 --> 00:53.950
+The first step of relating is the output of the system to the input is to write the equation of motion
+
+00:54.040 --> 01:02.860
+in the form of why the blue dot equals to 1 over M times K X minus C Y dot minus K Y.
+
+01:02.860 --> 01:03.900
+Now think about it.
+
+01:03.940 --> 01:08.660
+If we integrated y the block two times we will get the output y.
+
+01:08.680 --> 01:14.140
+This is the left hand side and you can easily build the right hand side each time you'll make the integration.
+
+01:14.140 --> 01:20.560
+So after integrating y level DOT for the first time we guns a Wyandotte signal we can take the signal
+
+01:20.620 --> 01:28.800
+and multiplied by a gain which is C or is it then being coefficient and feed it back to a summing point.
+
+01:29.230 --> 01:35.860
+Similarly after integrating y double lot for the second time we got Y and then multiplied by again K
+
+01:35.950 --> 01:42.520
+which is the stiffness of the spring and feed it back to the summing point adding all of this was inputs
+
+01:42.610 --> 01:50.980
+X will complete the model so let's see Z in the symbol link as you can see I have built and you model
+
+01:51.040 --> 01:55.810
+and from the late Peri common use blocks I will add an integrator
+
+01:59.010 --> 02:05.640
+and I would copy at so we can use one to integrate why the blocks and the other want to integrate why
+
+02:05.630 --> 02:07.490
+it ought to get Y.
+
+02:07.650 --> 02:13.730
+Now I will add three gains for 1 over M C and K.
+
+02:13.770 --> 02:22.760
+Again this is very simple just drag and drop one block and copy paste the others I will drag this guy
+
+02:22.760 --> 02:26.480
+here into forward path and make is a wiring
+
+02:29.470 --> 02:36.940
+and others are for the feedback signals so I need to reverse or flip the directions of this plug simply
+
+02:37.030 --> 02:42.610
+by right click ziplock select rotate them flap and flap ziplock
+
+02:52.100 --> 02:57.860
+now I will do the wiring the first one take the signal from the integration of why they will not which
+
+02:57.860 --> 02:58.910
+is why not.
+
+02:59.180 --> 03:06.140
+So this game is a damping see the other one takes the signal from the integration of y dot.
+
+03:06.230 --> 03:15.620
+So this is a gain of stiffness k now as you can see in the right hand side of the equation I have built
+
+03:15.770 --> 03:24.020
+these terms K Y and see why adult to complete the forward path I will add a scoop to show the graph
+
+03:24.020 --> 03:24.830
+of the output
+
+03:33.760 --> 03:35.800
+and I will add a summing point
+
+03:44.180 --> 03:51.350
+I will double click the summing point and change its shape to rectangle very easy and I will make it
+
+03:51.350 --> 03:59.000
+something sorry signals the first signal is positive and the second and third signals are negative
+
+04:05.500 --> 04:11.070
+again by looking at the equation I need to subtract these two signals from each other.
+
+04:11.110 --> 04:16.200
+So I will drag these two signals to the negative sign in the summing point.
+
+04:16.210 --> 04:23.510
+Now I need to add an input which represents x of t and this input is multiplied by stiffness case.
+
+04:23.510 --> 04:28.270
+So first I will drag and drop a gain and completes the wiring
+
+04:34.030 --> 04:35.110
+now for the inputs.
+
+04:35.110 --> 04:38.790
+I will use as tip input from sources blocks.
+
+04:38.800 --> 04:43.180
+I will drag and drop step source and wire it to the game plan
+
+04:48.170 --> 04:49.340
+to complete the model.
+
+04:49.340 --> 04:52.280
+We need to define the values of the gains.
+
+04:52.280 --> 05:01.460
+So assumes that the mass equals to 25 kg then being coefficients C equal to one hundred and fifty Newton
+
+05:01.490 --> 05:07.480
+times second over meter the stiffness equals to forty K Newton perimeter.
+
+05:07.520 --> 05:09.310
+So this game is 1 over m.
+
+05:09.320 --> 05:19.870
+So 1 over 25 this guy here is 150.
+
+05:19.900 --> 05:21.160
+This one is forty K
+
+05:24.880 --> 05:31.540
+and the last one which is also k equals to forty k.
+
+05:31.760 --> 05:39.010
+Now another look at the model we have built the input x which is a step input is multiplied by K and
+
+05:39.020 --> 05:45.680
+is feed it to the summing point and then sub a circuit from these two signals which are why the time
+
+05:45.680 --> 05:55.160
+C and Y times K Z result signal is in multiplied by one over m to get Y the Bulldogs now integrate y
+
+05:55.180 --> 06:03.290
+the blue dot for the first time to get y dot you can feed the signal back and Y is integrated to Y which
+
+06:03.290 --> 06:08.410
+is angled and again we can complete the model by feeding this signal back.
+
+06:08.450 --> 06:12.200
+Finally a scoop is used to show the result.
+
+06:12.200 --> 06:16.600
+This is a step m but so I can double click it to change its properties.
+
+06:16.760 --> 06:22.340
+For example this is a unit step but I can change this number to any other number.
+
+06:22.430 --> 06:24.740
+Now let's run this model and see as a result.
+
+06:24.770 --> 06:28.550
+But first I will reduce a simulating time to 5 seconds
+
+06:38.640 --> 06:44.200
+the system behavior is shown in the figure as there are some oscillations in the system which are reduced
+
+06:44.200 --> 06:46.420
+by time until disappear.

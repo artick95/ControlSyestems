@@ -1,0 +1,58 @@
+WEBVTT
+
+00:00.210 --> 00:01.680
+Welcome to the section number for
+
+00:04.730 --> 00:05.310
+this section.
+
+00:05.310 --> 00:10.040
+You're going to learn some advanced techniques in MATLAB Samuel Inc.
+
+00:10.070 --> 00:16.650
+And this is done through real life applications in mechanical headed like in electrical systems.
+
+00:18.080 --> 00:24.110
+And this section you will see how to use simulated canola to model and simulate think level control
+
+00:24.820 --> 00:32.490
+will use proportional controller in order to control the level of this liquid inside this tank and also
+
+00:32.510 --> 00:37.480
+show you how to use the controller in order to provide more accurate control action.
+
+00:41.110 --> 00:43.630
+You will also as messes bring them our system.
+
+00:43.630 --> 00:53.350
+We will model the system in both time domain and s domain by using specific function.
+
+00:53.460 --> 00:58.300
+And also we will look at molding and simulation of DC several motor.
+
+00:58.590 --> 01:03.390
+I'll show you how to type the most money and equations of the system and use a similar link in order
+
+01:03.390 --> 01:06.760
+to simulate that you see several motor.
+
+01:06.850 --> 01:11.990
+I'll also explain the servo mechanism and the from problems of the system.
+
+01:16.690 --> 01:18.880
+Also even look at a quarter car model.
+
+01:18.880 --> 01:26.200
+I will show you how to model the suspension system of a vehicle in time domain and frequency domain
+
+01:26.260 --> 01:27.290
+or as domain.
+
+01:27.400 --> 01:29.680
+And also will show you how to modify the system.
+
+01:29.770 --> 01:32.070
+If you have a very damning coefficient.
+
+01:32.320 --> 01:33.750
+So let's get it started.

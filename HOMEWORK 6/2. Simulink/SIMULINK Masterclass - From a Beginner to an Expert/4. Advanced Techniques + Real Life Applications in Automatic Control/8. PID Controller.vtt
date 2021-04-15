@@ -1,0 +1,385 @@
+WEBVTT
+
+00:00.120 --> 00:06.360
+Welcome back guys to one of the most important lecture and discourse which I will talk about P. controller
+
+00:06.450 --> 00:13.320
+and actually in this lecture I'm going to explain the concept of the controller without talking much
+
+00:13.440 --> 00:19.830
+in mathematical details so that you will enjoy the lecture understand the concept of the controller
+
+00:20.100 --> 00:21.110
+and not get bored.
+
+00:21.720 --> 00:29.070
+So let's get started as we have talked in previous lectures about any control system we have what we
+
+00:29.070 --> 00:36.430
+call a system or plant and we have the most magical equations of this plant.
+
+00:36.570 --> 00:38.960
+The plant produce controlled variable.
+
+00:38.970 --> 00:48.480
+So this variable is the one I want to control or I want to make it reach to a certain value in order
+
+00:48.480 --> 00:50.290
+to make any control system.
+
+00:50.300 --> 00:59.180
+Actually we take a feedback signal from this control variable and we feed it back to a summing point
+
+00:59.210 --> 01:04.510
+in which we have here commanded variable and what is commanded variable.
+
+01:04.700 --> 01:09.060
+It is a variable that I want my output to reach.
+
+01:09.140 --> 01:16.970
+For example if your planet is a mess spring then being system and you want your Mars to reach five Sunny
+
+01:16.970 --> 01:19.180
+meters for example above the ground.
+
+01:19.280 --> 01:23.410
+So the command of the variable is five centimeters.
+
+01:23.480 --> 01:28.670
+You may design a controllers that makes your system not reaching five centimeters.
+
+01:28.870 --> 01:34.200
+Maybe for example four point eight centimeters in a steady state response.
+
+01:34.210 --> 01:42.330
+So here we have what we call error or error is command is variable minus control variable.
+
+01:42.340 --> 01:46.540
+And actually we feed this error or inside the controller.
+
+01:46.540 --> 01:54.850
+We designed this controller in order to make our control variable reach as a desired value I would of
+
+01:54.850 --> 02:02.590
+this controller is activating single and activating signal enters a plant in order to control or to
+
+02:02.590 --> 02:06.420
+provide the control action to the control variable.
+
+02:06.580 --> 02:16.270
+One of the most important types of controller is what we call P idea controller or proportional integral
+
+02:16.540 --> 02:25.780
+derivative controller and actually what we do in any controller is to analyze and use this error signal
+
+02:25.780 --> 02:38.120
+in order to provide and add your kid activating signal so NPI the controller we have here an input minus
+
+02:38.190 --> 02:49.060
+the output or the control variable which provides aero there is feed to three blocks the first block
+
+02:49.090 --> 02:56.800
+is for proportional controller and proportional controller have a constant KP times the error signal
+
+02:57.180 --> 03:04.600
+and also we have what we call integral controller in integral controller we integrate the arrow signal
+
+03:05.050 --> 03:13.540
+and we have derivative controller in which we differentiate the error signal the three signals out of
+
+03:13.540 --> 03:22.190
+these three components are summing and provided to actual waiting signal and Owen to talk in details
+
+03:22.190 --> 03:29.000
+about the mathematical foundation of the API the controller but actually the most important concept
+
+03:29.180 --> 03:37.490
+I want you to get from this lecture is to understand what is meant pi P idea controller.
+
+03:37.490 --> 03:46.040
+So in order to explain this concept we would look at drone controlling problem so in measures that we
+
+03:46.040 --> 03:53.450
+have drone and we want this drone to reach 50 meters above the ground.
+
+03:53.450 --> 04:01.190
+If we look at the drone we will find that we have the weight of drone which pulls the drone down.
+
+04:01.490 --> 04:08.710
+And in order for the drone to fly or hover we need to provide the force from here.
+
+04:08.870 --> 04:17.870
+We found that forces that will be equilibrium with the weight and cancels the effect of weight is at
+
+04:17.870 --> 04:25.400
+one hundred ppm which means if this drone reaches or the motors of this drone reaches one hundred or
+
+04:25.410 --> 04:30.310
+APM we will provide the forces that cancels the weight of this drone.
+
+04:30.410 --> 04:32.760
+At this moment the drone will hover.
+
+04:34.010 --> 04:40.630
+So we need this drone to reach 50 meters and at this height hovers.
+
+04:40.670 --> 04:48.800
+So if we look at our control system the plant here is the drone and we have the mathematical equations
+
+04:48.830 --> 04:50.680
+of the drone.
+
+04:50.960 --> 04:54.960
+The desired output is reaching 50 meters.
+
+04:54.980 --> 05:04.340
+We want this drone to reach 50 meters and hover at this height the active waiting signal is propeller
+
+05:04.340 --> 05:05.000
+speed.
+
+05:05.150 --> 05:09.240
+So is the output of this controller is a propeller speed.
+
+05:09.350 --> 05:17.930
+So we want this value to be at 100 R B M and for example we will try a proportional controller so we
+
+05:17.930 --> 05:26.750
+will use KP and I will show you how to use different values of KP in order to track the response and
+
+05:26.840 --> 05:35.930
+error of this strong so emissions that this drone and the ground.
+
+05:35.930 --> 05:45.850
+So in this case the error is 50 minus zero which is 50 based on our controller design.
+
+05:45.850 --> 05:52.520
+We will find that the speed equals to error times a proportional controller constant.
+
+05:52.570 --> 06:02.170
+So for example imagine that we have used KP equals 2 2 and once the drone is in the ground which means
+
+06:02.170 --> 06:05.240
+that the error is 50 minus zero.
+
+06:05.260 --> 06:11.940
+We will find that the speed of the motors equals to fifty times two which equals to 100.
+
+06:11.950 --> 06:16.690
+R B M So in this case the drone will hover in the ground.
+
+06:16.690 --> 06:21.160
+We may increase the value of KP to be for example 5.
+
+06:21.250 --> 06:27.850
+So in this case the drone will go up until reaching height of 30 metres.
+
+06:27.850 --> 06:37.270
+The error in this case is 50 minus 30 equals to 20 metres and the speed equals to 20 times the KP which
+
+06:37.270 --> 06:40.980
+is five so equals to 100.
+
+06:41.020 --> 06:47.800
+So at this case the drone will hover because we reach and speed of 100 R B M but we still have what
+
+06:47.800 --> 06:54.400
+we call a steady state error which is 20 when increasing the value of KP you will find that we have
+
+06:54.400 --> 07:02.140
+reduced the steady state error but there is no way for this error to reach to zero or to be eliminated
+
+07:02.380 --> 07:04.230
+for a very simple reason.
+
+07:04.240 --> 07:09.310
+If this error reached to zero value the speed of the drone will be zero.
+
+07:09.310 --> 07:12.430
+So the drone will be dropped from its height.
+
+07:12.430 --> 07:19.090
+So in many applications when using proportional controllers we will not remove what we call a steady
+
+07:19.090 --> 07:20.280
+state error.
+
+07:20.290 --> 07:24.540
+The problem now is we want to eliminate the steady state error.
+
+07:24.850 --> 07:34.670
+So imagine that we have added to our control design what we call integral controller and the integral
+
+07:34.670 --> 07:41.840
+controller actually takes the error and integrated over time to provide the control action the derivative
+
+07:41.840 --> 07:50.120
+controller pace and information from past because it integrates error starting from the simulating time
+
+07:50.210 --> 07:53.470
+until reaching the desired output.
+
+07:53.540 --> 07:57.800
+So we always look about information from past.
+
+07:58.130 --> 08:01.720
+So it's like memory it integrates error over time.
+
+08:01.760 --> 08:04.940
+So let's look at the drone problem again.
+
+08:04.940 --> 08:09.130
+Imagine that the drone has prized up.
+
+08:09.320 --> 08:16.190
+So we have here what we call a steady state or the steady state or here is none zero value which is
+
+08:16.190 --> 08:17.600
+constant value.
+
+08:17.600 --> 08:23.090
+So what integral controller do is when integrating non-zero value.
+
+08:23.090 --> 08:32.630
+We will have increasing action so the drone speed will keep to increase until reaching to a point where
+
+08:32.650 --> 08:35.220
+the steady state error reached to zero.
+
+08:35.270 --> 08:39.380
+In this case we are adding zero to our problem.
+
+08:39.380 --> 08:50.470
+So the actual waiting signal will not change and the drone will be hover at 50 meters.
+
+08:50.520 --> 08:54.860
+So now we have managed to eliminate the steady state error.
+
+08:54.870 --> 09:00.350
+Now the question is does this controller actually do what supposed to do.
+
+09:00.360 --> 09:03.270
+Is it a good controller to consider.
+
+09:03.270 --> 09:08.500
+The answer is It depends on your applications and this example will tell you why.
+
+09:08.520 --> 09:16.080
+Imagine this case where we have a very small error in which we can consider as a proportional controller
+
+09:16.140 --> 09:22.180
+is not working because we have an error which is very small that reaches to zero.
+
+09:22.290 --> 09:27.060
+So we have no control action from this proportional controller.
+
+09:27.270 --> 09:35.130
+But actually what we have here is the integral controller will keep something the error over time so
+
+09:35.130 --> 09:40.080
+that we will find that we are not reaching 100 or PPM speed.
+
+09:40.080 --> 09:45.050
+We will pass this speed to another speed for example one hundred and two.
+
+09:45.120 --> 09:51.500
+So what we have here is we have overshoot or we have reach and undesired value.
+
+09:51.750 --> 09:54.810
+So as a drone now will not be at 50 meters.
+
+09:54.900 --> 09:59.580
+It will be for example above this 50 meters by a small amount.
+
+09:59.640 --> 10:02.340
+And this is will produce a negative arrow.
+
+10:02.370 --> 10:10.170
+This negative Arrow is a must in order to integrate the controller to correct this action or this overshoot
+
+10:10.560 --> 10:12.930
+and give back to the steady state.
+
+10:12.930 --> 10:19.710
+So yes we have eliminated the steady state error but actually we have created what we call overshoot
+
+10:19.770 --> 10:23.000
+in order to get back to the steady state position.
+
+10:23.160 --> 10:26.370
+In some applications overshooting is not a good thing.
+
+10:26.760 --> 10:29.510
+So what is a solution to this problem.
+
+10:29.520 --> 10:32.220
+You need to upgrade your controller.
+
+10:32.280 --> 10:38.730
+We have added almost our term to our controller which is derivative controller and actually a derivative
+
+10:38.730 --> 10:46.050
+controller looks at future for a very simple reason it differentiates error over time.
+
+10:46.050 --> 10:53.100
+So imagine that the drone is moving up was very high speed and actually what controllers see is that
+
+10:53.100 --> 11:00.940
+we have rate of change of error or that error is decreasing with high rate of change.
+
+11:01.140 --> 11:10.410
+And by differentiating the error we will reach to negative value of error which is actually reducing
+
+11:10.410 --> 11:12.480
+the speed of the drone.
+
+11:12.720 --> 11:19.830
+So the drone will go up very speed until the derivative controller adds a control action and the drone
+
+11:19.830 --> 11:23.700
+will go slow to reaching to 100.
+
+11:23.710 --> 11:34.020
+Our P M. and will hover at 50 meters so actually we have managed to eliminate the oscillations and overshoot
+
+11:34.050 --> 11:38.130
+by using derivative controller.
+
+11:38.140 --> 11:47.770
+So now we have built what we call P R D controller API D controller managed to eliminate the steady
+
+11:47.770 --> 11:57.010
+state error of this drone and actually to reach to fast response of this drone in order to move from
+
+11:57.010 --> 12:07.410
+the ground up to 50 meters without overshooting or oscillations so in order to summarize what we have
+
+12:07.410 --> 12:14.340
+talked in this lecture we have talked about three terms and the controller is a proportional controller.
+
+12:14.940 --> 12:23.190
+And actually it doesn't eliminate the steady state error in most applications and in real life proportional
+
+12:23.300 --> 12:31.740
+controller always added was other controllers high gain values reduces a steady state or but leads to
+
+12:31.740 --> 12:33.330
+some system oscillations
+
+12:35.850 --> 12:43.290
+integral plus proportional controller the integral controller integrates and or signal over time it
+
+12:43.290 --> 12:46.110
+manages to eliminate the steady state error.
+
+12:47.490 --> 12:55.850
+But unfortunately it adds overshoot and in some systems it can lead to system instability
+
+12:58.410 --> 13:08.160
+derivative plus proportional controller the derivative controller has high sensitivity provides significant
+
+13:08.160 --> 13:17.150
+correction before the error becomes too large and doesn't affect the city state or directly add to them
+
+13:17.150 --> 13:21.010
+being to the system which eliminates or removes the overshoot.

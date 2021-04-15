@@ -1,0 +1,409 @@
+WEBVTT
+
+00:00.240 --> 00:06.420
+So in a previous view we have done the most medical modelling of tank level control and also I have
+
+00:06.420 --> 00:09.180
+used similar link in order to simulate the smaller.
+
+00:10.110 --> 00:18.410
+And as you can see we have here increased amount of tank height by increasing the time.
+
+00:18.420 --> 00:25.800
+So what if you want to control the tank height or to maintain that thing quite a certain point for example
+
+00:26.220 --> 00:28.100
+or point three millimeter.
+
+00:28.110 --> 00:34.970
+In this case we need to add something new to our most medical modelling or to our system.
+
+00:35.000 --> 00:37.170
+This is what we call a controller.
+
+00:37.340 --> 00:42.320
+If you have watched the previous section we have talk about the control systems.
+
+00:42.320 --> 00:47.420
+I have explained that we have here a planet with mathematical equations or most medical modelling of
+
+00:47.420 --> 00:55.180
+this planet and we take a feedback of the orbit of this planet and we feed it to what we call a controller.
+
+00:55.180 --> 01:01.430
+And so the controller there are some calculations in order to have or to maintain a certain output of
+
+01:01.430 --> 01:02.610
+the planet.
+
+01:02.630 --> 01:06.740
+So this is what we are going to do in the tank level a control problem
+
+01:10.940 --> 01:19.200
+as you can see some new systems are introduced to our problem and the main problem we have here a flow
+
+01:19.200 --> 01:26.130
+rate paste on the position of the throttle which is Q2 Q2 is feed inside this thing.
+
+01:26.280 --> 01:34.380
+Height is increase with time and we have here Q1 which leaves us think and this is sort of law I have
+
+01:34.380 --> 01:41.820
+added here error detecting device and they're detecting device we have a reference value of r which
+
+01:41.820 --> 01:51.390
+is a position and we have here a float which reflects the change of the tank height the difference between
+
+01:51.660 --> 02:01.680
+this reference input and the height is fitted to this air detecting which has constant k e to produces
+
+02:01.740 --> 02:11.160
+voltage e this voltage e is amplified by this amplifier was a constant K A to produce V which is fitted
+
+02:11.160 --> 02:18.120
+to this server mortar and the servo motor output speed is C the adult which is connected to the input
+
+02:18.130 --> 02:25.890
+throttle by this gear system so now and is teed off openings as volt by hand we have this motorized
+
+02:25.890 --> 02:35.100
+system based on a measurement from the output which is height inside this electric circuit to produce
+
+02:35.100 --> 02:41.980
+a motion on this motor in order to decide which seat heavy or seat the V lot of this valve system.
+
+02:42.420 --> 02:49.630
+So let's see is a mathematical equations or most medical modelling of this new system these three equations
+
+02:49.630 --> 02:56.050
+from the previous most medical modelling of the tank without the controller we have q two equals two
+
+02:56.080 --> 03:04.150
+K V times see the V adult Q two minus Q one equals two a each dot which is a continuity equation and
+
+03:04.150 --> 03:08.760
+from this throttle we have q one times R equals two each.
+
+03:08.830 --> 03:16.990
+Now inside this error detecting device we have reference input R which is again any position like for
+
+03:16.990 --> 03:24.670
+example 0 points three meter or point or three meter and so on minus etch which is measured using this
+
+03:24.670 --> 03:35.200
+float times the constant of error detecting device which is key to produce voltage e now by using amplifier
+
+03:35.760 --> 03:48.550
+was constant K A V equals two K A times e we have this equation which relates to output of the motor
+
+03:48.580 --> 03:55.810
+or the speed of the motor C to M by the voltage inside this motor see the m the block equals to one
+
+03:55.810 --> 04:00.900
+hundred thirty three times voltage minus or point six seven C to Emerald.
+
+04:01.840 --> 04:07.810
+So as this relation is based on this server motor so we have nothing to do with this equation this equation
+
+04:07.810 --> 04:08.890
+is given.
+
+04:08.890 --> 04:17.070
+And finally we have the solar speed CTV that equals to the motor speed see the m not over is a good
+
+04:17.080 --> 04:17.950
+rescue.
+
+04:18.130 --> 04:24.280
+Now let's try to model this new system and Samuel link and see how to use this proportional controller
+
+04:24.280 --> 04:30.700
+in order to control and maintain the height of this tank at a certain level and see if we will manage
+
+04:30.700 --> 04:34.920
+to maintain the height of the required value or not.
+
+04:35.020 --> 04:37.410
+This is our model from the previous video.
+
+04:38.150 --> 04:48.800
+And actually I will delete this input and the SCOOP and I will select all this model right click and
+
+04:48.800 --> 04:53.970
+I will create subsystem from selection.
+
+04:54.130 --> 05:00.880
+Now I have this subsystem which is the system of the thing or the mathematical equations of the thing
+
+05:00.910 --> 05:02.410
+without any controller.
+
+05:02.980 --> 05:04.240
+So I would call it thank
+
+05:07.360 --> 05:16.230
+actually I can change the image of this block by right click and add mosque and here I will use its
+
+05:16.230 --> 05:22.180
+function image of I will need an image.
+
+05:22.350 --> 05:28.030
+So another function I am great.
+
+05:28.530 --> 05:31.280
+Just make sure that the image is in the same folder.
+
+05:31.290 --> 05:37.130
+You have saved this modelling so I have an image tank.
+
+05:37.270 --> 05:49.180
+The J P G now apply and OK as you can see I've changed this image or the image of the subsystem to this
+
+05:49.180 --> 05:52.630
+new image can select any image you want.
+
+05:52.630 --> 05:59.340
+So I will add another subsystem so you can search for subsystem
+
+06:03.160 --> 06:07.440
+this one here right click and add to Untitled I will drag it here.
+
+06:07.510 --> 06:10.500
+Call it controller
+
+06:16.250 --> 06:18.500
+commonly used blocks I will add some point
+
+06:21.380 --> 06:23.150
+and I forgot to add scope
+
+06:26.640 --> 06:34.380
+so if he remembers are from tank subsystem is the height etch so is plotted on the scope
+
+06:42.060 --> 06:50.020
+and I will take a feedback from etch and I will feed it to the summing point minus
+
+06:53.080 --> 06:59.750
+and I have here as a reference input ah which is for example constant.
+
+06:59.770 --> 07:03.070
+So from sources only the constant
+
+07:05.570 --> 07:07.250
+off or point three
+
+07:10.360 --> 07:13.230
+which is fitted to this summing clock.
+
+07:13.900 --> 07:15.270
+So.
+
+07:15.330 --> 07:24.700
+Or or point three minus etch is fitted to the controller and the arbiter the controller is the input
+
+07:24.730 --> 07:27.190
+to the tank.
+
+07:29.940 --> 07:36.990
+Now I need to double click the controller and start to build my control system so the input here is
+
+07:36.990 --> 07:38.120
+R minus edge.
+
+07:39.510 --> 07:49.240
+So first single I add some gains from commonly use blocks 0 net gain.
+
+07:49.660 --> 07:56.090
+I will add integrator and then add something point OK
+
+07:59.300 --> 08:00.320
+I will lead this
+
+08:03.240 --> 08:14.530
+I can call it input to Ann Arbor to not to get confused with the tank input and output now the input
+
+08:14.530 --> 08:17.830
+here which is or minus edges multiplied by gain.
+
+08:18.010 --> 08:18.640
+Katie.
+
+08:19.360 --> 08:27.280
+So again I have the same file but I have updated you have here constant k equals to 0.01 the tank or
+
+08:27.280 --> 08:29.980
+the throttle the resistance equals to 0 point to 5.
+
+08:29.990 --> 08:33.420
+Think every area equals two or point eight.
+
+08:33.500 --> 08:36.600
+We have this constant here from the air detecting device.
+
+08:36.610 --> 08:46.870
+K equals to 200 hundred voltage over a meter so if we have distance equals to one meter we will produce
+
+08:46.900 --> 08:48.610
+two hundred volt.
+
+08:49.420 --> 08:58.370
+We have here is a constant of amplifier which is 50 and we have here is a gear issue and equals to 100.
+
+08:58.390 --> 09:08.170
+Now we're on this model and I have these different variables in the workspace back to the subsystem
+
+09:09.600 --> 09:12.280
+on Kobe's this game.
+
+09:12.360 --> 09:19.790
+This is K E m from the equations you can see that are minus edge.
+
+09:19.880 --> 09:29.730
+Times k equals to small in order to reduce the voltage or the output of the amplifier we multiply e
+
+09:29.730 --> 09:38.020
+times the amplifier constant which Okay so we can take our minus edge and multiplied by k e times K
+
+09:38.040 --> 09:40.990
+in order to produce the.
+
+09:41.060 --> 09:43.040
+So this is key.
+
+09:43.040 --> 09:45.620
+E minus K now okay.
+
+09:46.700 --> 09:56.240
+Whereas this here and expand this we have relation between the moderate speed and acceleration and the
+
+09:56.240 --> 09:58.790
+input voltage to this motor.
+
+09:58.790 --> 10:05.720
+See them they will look equals to one hundred thirty three times V minus 0 point six seven times C to
+
+10:05.900 --> 10:11.170
+m not so I will feed this facing v signal
+
+10:14.060 --> 10:16.550
+to another gain which is one hundred insert three
+
+10:19.680 --> 10:22.490
+and out output is feed it to a summing point
+
+10:27.400 --> 10:30.560
+the object of this summing point is see the MWD.
+
+10:31.210 --> 10:38.570
+So now I have multiplied the times one hundred and thirty three.
+
+10:38.760 --> 10:47.780
+This is in plus minus this signal here will be 0 point six seven times Seta M lot.
+
+10:47.830 --> 10:50.470
+Now I don't have any seat m.
+
+10:50.800 --> 10:56.800
+This will produce seat M double dot so I can take take the signal which is see them the look and integrate
+
+10:56.800 --> 10:57.520
+it to have seat.
+
+10:57.520 --> 10:58.070
+I m not.
+
+10:58.840 --> 11:03.520
+And take a signal from C time dot to feed back and close the loop.
+
+11:04.630 --> 11:13.880
+So if I integrate the system or the signal seats I m level look the integration is C to m dot and c
+
+11:13.880 --> 11:20.600
+to him dot almost R signal times is this game.
+
+11:20.620 --> 11:22.040
+But first I need to flip it
+
+11:25.530 --> 11:30.520
+does gain is 0 point 6 7
+
+11:34.470 --> 11:36.040
+I'll feed it to this same point
+
+11:38.560 --> 11:41.600
+trysts leads us in feed.
+
+11:41.600 --> 11:42.250
+This one here.
+
+11:42.250 --> 11:47.020
+Double Click to change the sine.
+
+11:47.250 --> 11:49.530
+This is minus here.
+
+11:49.980 --> 12:02.470
+This is produce C to handle it now is C time the Times one over n two this is one over n produces CTV
+
+12:02.480 --> 12:13.710
+don't so the input to this controller is reference R and the output is C to veto it.
+
+12:13.790 --> 12:26.050
+Now back to untitled we have here is a tank and controller we have a reference R then to this controller
+
+12:26.050 --> 12:34.900
+is R minus etch so this r and this feedback here etch R minus etch inside this controller in order to
+
+12:34.900 --> 12:43.440
+produce see the v dot and see the result is feed it inside this thing in order to produce etch.
+
+12:43.630 --> 12:45.310
+Now I can run this model
+
+12:48.030 --> 12:49.360
+double click on the scoop
+
+12:52.400 --> 12:59.630
+now as you can see here this is a response or is a change of height was time we have here some overshoot
+
+13:00.090 --> 13:04.560
+in the system a city state after for example one second.
+
+13:05.060 --> 13:08.860
+So a final value which is almost all points three meter.
+
+13:08.960 --> 13:13.210
+Let's see what happens when we try to reduce the value of family fire.
+
+13:13.640 --> 13:19.670
+So I will go to m file and k a 2 for example 2.
+
+13:19.940 --> 13:23.920
+Now on the system closes
+
+13:27.680 --> 13:28.910
+and runs on model again
+
+13:35.950 --> 13:42.550
+now as you can see we have get rid of the solutions and also overshoot but we have another problem that
+
+13:42.550 --> 13:50.250
+we want the desired output to be 0 Boeing 3 but in our case it's all point to now let's see the effect
+
+13:50.280 --> 13:59.150
+of increasing the value of amplification 2 for example 90 now from
+
+14:06.060 --> 14:14.880
+by increasing the value of the amplification the maximum overshoot is increased and we're almost at
+
+14:15.330 --> 14:18.330
+0 point Steve was less serious to either
+
+14:21.530 --> 14:22.620
+that's all for this with you.
+
+14:22.620 --> 14:27.210
+Thank you guys for watching and seems an extra beat you don't forget to download this model from the
+
+14:27.210 --> 14:28.230
+nectar resources.

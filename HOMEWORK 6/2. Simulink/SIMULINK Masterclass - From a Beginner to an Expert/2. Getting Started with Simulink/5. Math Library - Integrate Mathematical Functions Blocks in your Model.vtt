@@ -1,0 +1,127 @@
+WEBVTT
+
+00:02.420 --> 00:03.420
+Math functions.
+
+00:03.440 --> 00:09.740
+There are some blocks to do most medical functions Z can be found in mass operations library.
+
+00:09.740 --> 00:15.980
+I'll show you some of these blocks but not all of them because it would be a waste of time the first
+
+00:15.980 --> 00:18.650
+set of blocks are some product.
+
+00:18.650 --> 00:23.660
+Divide the sum block is used to some two or more signals.
+
+00:23.690 --> 00:26.450
+It can be a rectangle or circle shape.
+
+00:26.540 --> 00:29.180
+You can define the number of signals from here.
+
+00:29.210 --> 00:33.960
+There are two signals plus plus I can change to whatever I want.
+
+00:34.040 --> 00:38.780
+For example plus plus minus or negative and negative and negative plus and so on.
+
+00:42.290 --> 00:47.610
+Let's try for example to add 1 2 3.
+
+00:47.620 --> 00:54.190
+The answer is 4 product block put a block takes 2 inputs or more.
+
+00:54.220 --> 01:02.250
+Which can be assigned from here and multiplied them together divide block is the same as some plot but
+
+01:02.250 --> 01:05.790
+instead of plus or minus as they are multiplication and division.
+
+01:05.850 --> 01:10.440
+The number of inputs and the operations are modified from here.
+
+01:10.440 --> 01:16.770
+For example let's try multiplication multiplication multiplication and division now from.
+
+01:16.860 --> 01:29.030
+So two times two times two over 1 equals 2 8 the next set of blocks EPS sine buys X block output the
+
+01:29.030 --> 01:35.610
+absolute value of the input signal for example negative 3 converse 2 plus 3.
+
+01:35.840 --> 01:40.470
+Same block produces plus 1 if the input is positive negative 1.
+
+01:40.490 --> 01:47.710
+If the input is negative and 0 4 0 inputs for example minus 3 produces minus 1
+
+01:53.450 --> 02:05.010
+3 produces 1 0 produces 0 pass block bias block is used to shift the signal by a certain amount plus
+
+02:05.010 --> 02:11.430
+or minus which can be useful for different applications as you can see is input negative 3 is shifted
+
+02:11.430 --> 02:12.410
+by 3.
+
+02:12.510 --> 02:14.470
+So the answer is 0.
+
+02:14.520 --> 02:22.630
+I can change the bias to negative 3 so the output is negative 6 the final set of blocks.
+
+02:22.830 --> 02:27.810
+Mass function a list of different functions you can choose from.
+
+02:27.810 --> 02:34.600
+For example exponential which will return the exponential of input signal you then go to 0 ends.
+
+02:34.610 --> 02:46.380
+Output is e to 0 which is 1 square with block which returns a square root of and ambled.
+
+02:46.420 --> 02:52.730
+There is also a block which is used to get rid of the floating number and turn into an integer rounding
+
+02:52.750 --> 02:53.320
+block.
+
+02:53.320 --> 03:02.900
+You can select from different options for example floor so three point five will be down to three seal
+
+03:05.670 --> 03:15.990
+so three point five were rounded to next biggest integer which is for round which will turns three point
+
+03:15.990 --> 03:17.120
+five to four.
+
+03:17.220 --> 03:19.940
+If the first digit is less than 0 point five.
+
+03:19.940 --> 03:22.060
+The answer would be three.
+
+03:22.360 --> 03:28.500
+Finally fixed which removes the digits and keeping the integer without any change so as output is 3
+
+03:29.640 --> 03:31.280
+trig function block.
+
+03:31.530 --> 03:34.000
+You can choose from different trig functions.
+
+03:34.110 --> 03:44.590
+Just make sure that the input signal is in radians for example is a sign of 22 over 7 or by is due
+
+03:47.320 --> 03:54.250
+finally is a polynomial block P of you and this block you define as a coefficient of a given polynomial
+
+03:54.380 --> 04:03.080
+the input you is in substituted in this polynomial for example 1 0 negative 1 which is 1 x squared 0
+
+04:03.080 --> 04:09.440
+x minus 1 or x squared minus 1 Troy for example for
+
+04:14.670 --> 04:17.490
+so sixteen minus one is 15.

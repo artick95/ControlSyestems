@@ -1,0 +1,166 @@
+WEBVTT
+
+00:00.970 --> 00:06.550
+Now let's take a look at the most medical modelling of electric systems we are considering.
+
+00:06.550 --> 00:09.060
+Only these are LC circuits.
+
+00:09.060 --> 00:13.900
+Remember that's the objective of this section is to present how to develop the best medical modelling
+
+00:13.900 --> 00:20.170
+of some important systems and patents that we do as a process smuggling or not providing deep information
+
+00:20.170 --> 00:22.230
+about the physics of these systems.
+
+00:23.840 --> 00:29.810
+Same as the mechanical systems there are some important components in any electric systems.
+
+00:29.820 --> 00:37.630
+They are number one resistor a resistor is an electric components that resists the current flow and
+
+00:37.650 --> 00:43.220
+resistance V of T equals to r which is a resistor constant times.
+
+00:43.250 --> 00:43.910
+Are you t
+
+00:47.010 --> 00:47.970
+a capacitor.
+
+00:47.990 --> 00:54.090
+It's also known as condenser the capacitor is used to store energy in an electric field.
+
+00:54.130 --> 00:59.140
+So if you're building an electric systems and you want to store energy for some time and after that
+
+00:59.140 --> 00:59.800
+you use it.
+
+00:59.800 --> 01:11.530
+We use capacitor and capacitor V of T equals to 1 over C times integration of IE D.T. and inductor and
+
+01:11.530 --> 01:18.490
+inductor or coil resists change in electric current passing through it when I can't throw an inductor
+
+01:18.530 --> 01:26.590
+energies toward temporary but this time in form of magnetic field V of T equals two L times D I buy
+
+01:26.590 --> 01:37.230
+the t to solve our LC problems we use cash flows we have two lows Casey L or cash of current flow and
+
+01:37.230 --> 01:46.320
+K L or cash flow voltage low Casey l Casey l state Z the sum of electrical current entering and exiting
+
+01:46.350 --> 01:56.080
+and nude in a circuit must be equal and Kaveh l state Z the sum of voltage differences around any closed
+
+01:56.170 --> 02:05.880
+loop in a circuit is 0 there are two types of RLC circuits series and peril.
+
+02:05.900 --> 02:14.390
+This is an example of a serious circuit assembled here is voltage E I and the output is e all current
+
+02:14.450 --> 02:22.250
+ie flows and a circuit which consists of three components coil resistor and capacitor by applying Kaveh
+
+02:22.260 --> 02:32.600
+L on the first loop and the I buy the t plus R times I plus one of C integration i.e. t equals to e
+
+02:32.600 --> 02:42.390
+I the second loop one of our C times integration I t equals to E L taking the plus transformation less
+
+02:42.410 --> 02:52.880
+times I off as plus R times IV s plus one of our c s times I've s equals to E all of us the second equation
+
+02:53.120 --> 02:58.030
+one over C as times I F as equals 2 e all farce.
+
+02:58.070 --> 03:06.200
+So the transfer function e all over E R equals to one over it'll C S A squared plus our C S plus one
+
+03:12.060 --> 03:19.980
+another circuit the circuit has three loops by applying K vehicle on the first loop are one I one plus
+
+03:20.010 --> 03:26.970
+one over C one times integration of the current flows and the capacitor which is the difference between
+
+03:26.970 --> 03:38.820
+i1 and i2 so 1 over a c 1 times integration of i1 minus I2 t equals 2 e I second loop are two times
+
+03:38.890 --> 03:48.060
+I two plus one over C1 integration this time I two minus i1 T plus one over C two integration I two
+
+03:48.090 --> 03:50.000
+DTA equals two zero.
+
+03:50.010 --> 03:58.770
+Third loop e all equals to one over C two times integration of I2 D.T. taking the plus transformation
+
+03:58.860 --> 04:10.740
+one over C one s times I want S minus I2 s plus R 1 I want as equals 2 e I second equation one over
+
+04:10.740 --> 04:21.330
+C 1 s times I 2 minus i1 plus R two times I two plus one of our C two times as times I 2 equals two
+
+04:21.330 --> 04:27.290
+zero sir the equation one over two as times I two as equals to equal.
+
+04:27.390 --> 04:30.740
+If you want to draw as a plug diagram of the following model.
+
+04:30.780 --> 04:40.020
+Think about it if the input is E I and output is e 0 so if we go from e i to i 1 from the first equation
+
+04:40.110 --> 04:48.410
+and from I want to I 2 from the second equation we can go finally from I 2 2 8 0 which is output in
+
+04:48.420 --> 05:01.950
+the third equation because e 0 equals 2 I 2 times 1 over C 2 s so you fi plus I 2 times 1 over C 1 s
+
+05:02.340 --> 05:10.320
+and the result is multiplied by 1 over C 1 times s plus R to produce i1 I want is multiplied by one
+
+05:10.320 --> 05:19.830
+over C one s over are two plus one over C 1 s plus one over a C two s to get s eye to eye to is and
+
+05:19.820 --> 05:25.770
+feed it back and I two is also multiplied by one of our C two s to get equal
+
+05:28.560 --> 05:31.710
+in some cases the components can p in peril.
+
+05:31.710 --> 05:38.870
+In this case it's easier to model the system and as domain rather than te domain s domain modelling
+
+05:38.870 --> 05:46.700
+we replace each component with what we call impedance in time domains resistance is R button as domain
+
+05:46.700 --> 05:55.910
+we replace R with impedance Z DHA which is actually equals to r the coil L in t domain and an S domains
+
+05:55.910 --> 06:05.240
+it l equals two L times s capacitor C and as domain is one over C S and then we ride the system different
+
+06:05.240 --> 06:15.640
+equation directly in as domain let's see an example in this example is the input is v i and output is
+
+06:15.750 --> 06:22.560
+V.S. and we have two loops R and L are connected in parallel so I will not have this problem in estimate
+
+06:22.560 --> 06:29.430
+estimating the circuit and as the looks like this just replace each component with its impedance.
+
+06:29.650 --> 06:36.850
+Now we can replace as it R and Z L was equivalent impedance they are connected in parallel so Z are
+
+06:36.850 --> 06:48.520
+L equals to Z R times Z L overs R plus it l now applying KP L V IV as equals to IV s times Z C plus
+
+06:48.520 --> 07:02.650
+it r l the C of as equals to IV as times Z R L so v c over V R equals 2 z R L over Z C plus Z RL And
+
+07:02.650 --> 07:11.110
+who knows at Z R equals to R Z L equals two L s and finally Z C equals 2 1 over C S.

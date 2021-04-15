@@ -1,0 +1,169 @@
+WEBVTT
+
+00:00.270 --> 00:04.170
+Dealing with mattresses in Samuel Inc as Samuel his Matlab pays.
+
+00:04.230 --> 00:11.070
+It's not surprising that there's a big support for use of matrices and Multi-dimensional arrays that
+
+00:11.070 --> 00:12.080
+sees it.
+
+00:12.090 --> 00:13.410
+I will add a game blog
+
+00:16.180 --> 00:17.170
+constant pluck
+
+00:20.090 --> 00:21.890
+and display block
+
+00:26.330 --> 00:33.860
+now wears them together to produce simple model which could have some pluck is multiplied by game pluck
+
+00:33.940 --> 00:39.920
+and the result is displayed on display to block the input of the Coniston block can be customized to
+
+00:39.920 --> 00:47.720
+be in metrics was the same notation of the matlab for example one comma to semicolon eight comma nine
+
+00:47.720 --> 00:56.730
+to produce a matrix which is two times two by the same manner the game block for example nine semicolon
+
+00:56.780 --> 00:57.270
+five
+
+01:00.200 --> 01:06.740
+senses are two signals are now matrices that are multiplied to each other we need to define the multiplication
+
+01:06.740 --> 01:07.400
+method.
+
+01:07.400 --> 01:13.400
+This can be done by editing is a game block from multiplication we can select from different options
+
+01:13.400 --> 01:19.460
+like element by element multiplication which requires post matrices to have the same dimensions and
+
+01:19.460 --> 01:24.920
+the matrix multiplication which requires a number of columns of the first Matrix equals to the number
+
+01:24.920 --> 01:27.080
+of rows of the second metrics.
+
+01:27.230 --> 01:32.560
+There are also option like you times K or K times you view.
+
+01:32.570 --> 01:36.820
+Here is a constant signal and k is the gain signal.
+
+01:36.830 --> 01:39.240
+So for now I will select you times.
+
+01:39.320 --> 01:40.790
+K OK
+
+01:45.830 --> 01:46.760
+now run
+
+01:52.740 --> 02:00.780
+again I can change the game clock input to 1 Comma 2 semicolon 8 comma 8 OK
+
+02:03.790 --> 02:04.800
+and Arun
+
+02:08.290 --> 02:15.210
+Now let's try the element y's multiplication option okay from.
+
+02:15.420 --> 02:23.650
+So now each element is multiplied to each corresponding one from the other metrics another plug to deal
+
+02:23.650 --> 02:31.530
+with matrices is assignment block which could be found in the maze blocks library or simply by timing
+
+02:31.620 --> 02:33.020
+assignment in the search
+
+02:38.490 --> 02:45.310
+assignment block is used to replace a certain element in a matrix pi another predefined number let's
+
+02:45.330 --> 02:51.720
+see that I will copy the Coniston blocks from the previous model simply by right click and drag them
+
+02:51.900 --> 02:52.690
+twice.
+
+02:52.740 --> 03:00.660
+Also I will copy the display plug I will change the input of this block to one comment to comma 3 comma
+
+03:00.720 --> 03:06.750
+4 comma 5 and I will feed it to y node signal of the assignment plug
+
+03:11.310 --> 03:20.980
+I will change this one to fifty and I will feed it to you signal to decide which element to replace
+
+03:21.040 --> 03:24.790
+just change as index 2 for example 3
+
+03:28.670 --> 03:37.560
+runs a model as you can see is a service element is replaced with 50 there are some other plugs to deal
+
+03:37.560 --> 03:43.350
+with matrices like some of elements productive elements minimum and makes
+
+03:50.190 --> 03:53.190
+I will add Coniston pluck and display plug.
+
+03:58.070 --> 04:05.020
+I will cop it three times I will change the end but to one comma to commissary coma for
+
+04:10.130 --> 04:13.400
+this one to two coma 6 7 0
+
+04:20.720 --> 04:24.470
+and this guy here to 1 commit to commissary coma 6
+
+04:32.150 --> 04:38.330
+let's copy this minimum and maximum block so I can make one clock minimum and as a clock maximum and
+
+04:38.360 --> 04:39.230
+another game clock
+
+04:42.280 --> 04:44.950
+minus one minus two minus three minus four
+
+04:47.850 --> 04:51.960
+I'll probably display block four times and wire all the models
+
+05:01.280 --> 05:11.250
+and I'll change this guy here to maximum now from as you can see the first model the maximum of negative
+
+05:11.250 --> 05:17.310
+one negative two negative three negative four is negative one does a minimum of one two three four is
+
+05:17.400 --> 05:27.570
+one so product of two comma six comma seven comma zero is zero and the sum of one two three six is twelve.
+
+05:27.660 --> 05:31.190
+In case you have for example two times two metrics.
+
+05:31.440 --> 05:35.610
+In this case you have two dimensions column dimension and row dimension.
+
+05:35.610 --> 05:42.480
+For example one comma two semicolon five comma six I need to specify a direction which is a sum block
+
+05:42.480 --> 05:43.740
+will operate on.
+
+05:43.770 --> 05:47.890
+So from option some.
+
+05:47.890 --> 05:54.340
+Over specified dimension I will select two to sum over rows
+
+05:57.760 --> 05:58.500
+as output.
+
+05:58.500 --> 06:06.990
+In this case is sry which is a sum of the first row and eleven which is a sum of the second row.

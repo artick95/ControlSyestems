@@ -1,0 +1,76 @@
+WEBVTT
+
+00:00.240 --> 00:05.070
+Samuel ink functions sometimes you cannot find the exact functions that you want.
+
+00:05.070 --> 00:12.900
+Then you can try the different function blocks the function blocks are found in user defined functions
+
+00:12.950 --> 00:13.670
+library.
+
+00:13.950 --> 00:20.460
+Let's try the function block I will add display and constant blocks
+
+00:24.440 --> 00:25.410
+I will do the wiring
+
+00:29.810 --> 00:35.480
+by double clicking the function block we can change the definition of the function which is function
+
+00:35.510 --> 00:36.580
+of you.
+
+00:36.740 --> 00:42.080
+In this example I will keep it as simple as possible but you can try complex ones.
+
+00:42.530 --> 00:50.480
+I will write exponential or e XP of you which will take the signal you and get exponential of it.
+
+00:50.720 --> 01:00.920
+OK runs a model as you can see as the result is two point 7 1 8 which is e to the power one.
+
+01:01.000 --> 01:02.710
+Let's try 0 for example
+
+01:05.820 --> 01:14.340
+so output is 1 in some cases you may want to define a metal a function for example a program function
+
+01:14.340 --> 01:20.280
+to do a certain operation or to produce a certain output based on the input to do so.
+
+01:20.280 --> 01:30.850
+We use matlab function plot drag and drop the matlab function plug and also a display block and a constant
+
+01:30.850 --> 01:39.000
+block now makes a wiring to define the function double click on the plug as you can see is the first
+
+01:39.000 --> 01:44.580
+line is function Y equals to FC n or function of you.
+
+01:44.670 --> 01:47.970
+So the input is you and output signal is Y.
+
+01:48.090 --> 01:58.810
+So I can see for example if you is bigger than or equals to 1 y equals 2 3 semicolon else Y equals 2
+
+01:58.840 --> 02:00.200
+negative 3 and
+
+02:04.720 --> 02:08.050
+so let's try the input signal 1.
+
+02:08.410 --> 02:10.990
+Can you think of the ALP correct.
+
+02:11.200 --> 02:13.720
+It's now try 0
+
+02:19.110 --> 02:20.410
+correct.
+
+02:20.520 --> 02:27.150
+The outlook is negative 3 so functions are very important plucks and Samuel link and for more complex
+
+02:27.150 --> 02:32.100
+models in application like automotive or something you will use this pluck a lot.

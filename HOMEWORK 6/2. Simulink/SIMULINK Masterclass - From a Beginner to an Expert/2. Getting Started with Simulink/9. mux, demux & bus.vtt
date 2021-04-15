@@ -1,0 +1,154 @@
+WEBVTT
+
+00:00.180 --> 00:06.210
+In this video I want to show you three important blocks that are used in signal rooting and symbol link
+
+00:06.270 --> 00:09.960
+marks the max embossed from signal rooting library.
+
+00:09.960 --> 00:12.690
+I will add Max and Max blocks
+
+00:20.170 --> 00:21.240
+I will add sine wave.
+
+00:21.240 --> 00:21.550
+BLOCK
+
+00:27.050 --> 00:27.810
+game plop.
+
+00:37.470 --> 00:39.230
+And scoop block
+
+00:43.300 --> 00:48.940
+the max block is used to combine its inputs to a single Victor.
+
+00:48.960 --> 00:55.770
+Output was one important condition that there must be the same type as output which is now more than
+
+00:55.770 --> 00:57.970
+one signal can be plotted for example.
+
+00:58.110 --> 01:02.860
+Let's see as a simple example of sine wave which we have built before.
+
+01:02.880 --> 01:07.860
+Whereas a sine wave to again signal change the gain signal to 5.
+
+01:07.860 --> 01:14.340
+So that to increase the amplitude of the sine wave by five when multiplied together and the output is
+
+01:14.430 --> 01:19.940
+the first input to Max plot drag another signal from the sine wave simply by right click and drag.
+
+01:19.950 --> 01:29.610
+This is a second input was the max block whereas amongst 2 a scoop only is a sine wave amplitude to
+
+01:29.610 --> 01:31.100
+1 now runs a model
+
+01:33.900 --> 01:39.780
+as you can see post the sine wave signal and 5 sine wave signal are plotted in one graph.
+
+01:42.380 --> 01:50.200
+If you want again to separate these signals we use the max block I will copy for example two scoops
+
+01:53.290 --> 01:57.100
+and takes the signal of the max from this model wire them
+
+02:00.990 --> 02:03.860
+now run.
+
+02:03.900 --> 02:05.040
+This is a 5 sine
+
+02:07.950 --> 02:09.360
+and this is the sine
+
+02:12.690 --> 02:20.440
+number of output of the max can be change it from here similarly number of inputs of Max can be changed
+
+02:20.470 --> 02:25.510
+from here.
+
+02:25.530 --> 02:32.970
+Now let's see the bus in some cases your system may have many signals and you want a way to keep everything
+
+02:32.970 --> 02:38.190
+tidy and not having birds of Nest or wires running everywhere.
+
+02:38.190 --> 02:42.660
+We use bus blocks bus can contain signals from different types
+
+02:46.030 --> 02:54.980
+so at bus we add two blocks bus creator and bus selectors I will add another constant block
+
+03:06.000 --> 03:09.660
+double click on the bus creator and select the number of inputs to be sweet
+
+03:14.620 --> 03:16.280
+now where's a a of some pluck.
+
+03:17.460 --> 03:18.420
+Let's make it three
+
+03:21.540 --> 03:22.680
+the sine wave signal
+
+03:25.290 --> 03:28.000
+and the five sine wave signal.
+
+03:28.020 --> 03:32.930
+Now I have created a bus that contains three different signals.
+
+03:32.970 --> 03:38.640
+I cannot wires a bus plug directly to a scoop because remember it may contain signals from different
+
+03:38.640 --> 03:39.000
+type.
+
+03:39.240 --> 03:41.810
+So this is the importance of both selector.
+
+03:42.030 --> 03:47.280
+It's a block that connected to bus creator and it will contain the different signals as you can see
+
+03:52.140 --> 03:53.780
+if I wired this to scoop.
+
+03:53.790 --> 03:59.520
+As you can see it shows that this is signal number one so that you can have a better look on the signal
+
+03:59.520 --> 04:02.060
+you want and this is signal number two.
+
+04:02.070 --> 04:05.780
+Now double click the bus selector on the left.
+
+04:05.810 --> 04:09.200
+All the signals come from the bus creator are shown on the right.
+
+04:09.200 --> 04:16.910
+The signals that are selected I can add in a signal for example signal number one just click here and
+
+04:16.970 --> 04:19.960
+click on signal number one and click.
+
+04:20.000 --> 04:24.230
+Select that signal three and I will remove the signal
+
+04:28.270 --> 04:29.400
+I will add another scoop
+
+04:34.350 --> 04:35.730
+now run.
+
+04:35.730 --> 04:36.930
+This is a five sine
+
+04:39.750 --> 04:49.770
+This is a constant three and this is the sine signal in the next three to you we will look at selectors
+
+04:49.830 --> 04:51.990
+and switches so see you there.

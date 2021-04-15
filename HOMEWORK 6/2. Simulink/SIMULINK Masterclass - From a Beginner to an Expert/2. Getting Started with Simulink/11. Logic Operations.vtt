@@ -1,0 +1,67 @@
+WEBVTT
+
+00:00.300 --> 00:08.430
+Logical operations similarly can be used for logical operations like comparison signals or even carrying
+
+00:08.520 --> 00:11.390
+and or exhaust and so on.
+
+00:11.490 --> 00:17.030
+The output of these logic operations is boolean Type 1 if through 0.
+
+00:17.040 --> 00:24.690
+If false is a different logic operation plucks are found in logic in that operation library.
+
+00:24.690 --> 00:32.250
+Let's talk about street the from blocks compared to Coniston compared to 0 and relational operator compared
+
+00:32.250 --> 00:32.830
+to Coniston.
+
+00:32.850 --> 00:40.280
+Pluck is used to compare an input signal u to a constant which is added in constant value.
+
+00:40.290 --> 00:45.670
+You can also choose a comparison or as operator or even you can change the output data type.
+
+00:45.690 --> 00:51.480
+In this example one is being compared to three operator is less than or equal so as the output signal
+
+00:51.480 --> 01:00.360
+is true or one compared to zero block in this block the signal is compared to 0 and it gains operator
+
+01:00.360 --> 01:09.530
+can be selected from the block options since 1 is not less than or equal to zero as the answer is Fool's
+
+01:09.620 --> 01:18.210
+or 0 relational operator is used to compare two signals a gains operator can be selected from here
+
+01:22.890 --> 01:30.110
+we can also add logical operator which can be defined to be and NAND or or whatever
+
+01:32.900 --> 01:34.350
+I will drag this guy here.
+
+01:38.440 --> 01:40.090
+I will copy display pluck
+
+01:43.280 --> 01:47.320
+double clicks a block you can select a different operator from here.
+
+01:56.690 --> 02:01.560
+For example three and one the output is 1.
+
+02:01.640 --> 02:05.170
+You can also customize the shape of the block from here.
+
+02:05.270 --> 02:10.730
+I have a dash to be the file which contains a true stable of different logical operator if you want
+
+02:10.730 --> 02:11.750
+to refresh your memory.
+
+02:11.870 --> 02:13.350
+Thank you guys for watching.
+
+02:13.370 --> 02:15.980
+In the next video I will talk about subsystems.

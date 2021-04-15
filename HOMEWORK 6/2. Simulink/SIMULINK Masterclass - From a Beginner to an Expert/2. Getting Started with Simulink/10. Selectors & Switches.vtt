@@ -1,0 +1,127 @@
+WEBVTT
+
+00:00.530 --> 00:07.840
+Selectors and switches select road blocks are used to select defined elements from for example Victor.
+
+00:07.880 --> 00:15.800
+Let's see how selector can be found in signal routing blocks library double click and add to Untitled
+
+00:18.670 --> 00:20.590
+I will add Coniston block
+
+00:26.530 --> 00:27.640
+display block
+
+00:30.970 --> 00:32.140
+wires and together
+
+00:37.830 --> 00:42.720
+I'll change the constant to for example mind comma eight comma zero comma two
+
+00:46.750 --> 00:48.610
+to customize this electoral block.
+
+00:48.640 --> 00:49.770
+Double click.
+
+00:49.810 --> 00:53.920
+First we need to tell the blog and the input signal has for but
+
+00:57.780 --> 01:00.780
+to define the index of which element to choose.
+
+01:00.780 --> 01:05.850
+For example one comma to to select the first and second element.
+
+01:05.850 --> 01:12.510
+You can select the index option to be zero based to come from zero or 1 based to account from 1
+
+01:15.470 --> 01:27.690
+now run as you can see 8 and 9 switches switches are used just like if statements in programming but
+
+01:27.710 --> 01:36.230
+was some limitation and certain ways to use in order to use switches from signal routing and switch
+
+01:36.230 --> 01:41.140
+block multipoint switch and manual switch
+
+01:43.740 --> 01:44.850
+constant pluck.
+
+01:48.350 --> 01:49.340
+This play plunk
+
+01:52.970 --> 01:54.590
+I will add also step block
+
+01:57.710 --> 02:01.810
+sine wave block scoop
+
+02:13.630 --> 02:20.320
+switch block a second on this feed it to center point of the switch block in which a comparison is performed
+
+02:20.320 --> 02:27.660
+between this signal and a threshold it can be bigger than or equal bigger then or almost equal.
+
+02:27.670 --> 02:29.710
+This threshold is added from here.
+
+02:29.710 --> 02:31.340
+For example five.
+
+02:31.390 --> 02:34.900
+Now let's make a simple model and rise this block.
+
+02:34.900 --> 02:42.290
+I will Colby's a kind of some pluck three times I will change the input of this block to zero
+
+02:45.090 --> 02:51.900
+this one to five in which I will compare relative to it and I will leave this guy one I will wear the
+
+02:51.900 --> 02:56.940
+six kind of some pluck to the center point of the switch block it is a compressor is through the output
+
+02:56.940 --> 03:01.260
+signal will be the upper signal a folds it will be the lower signal
+
+03:07.130 --> 03:15.990
+now run six is bigger than five so the output signal is zero let's compare to five.
+
+03:16.120 --> 03:17.440
+Can you think of the output
+
+03:21.580 --> 03:29.730
+through the output is one manual switch manual switch select between two signals by simply double clicks
+
+03:29.730 --> 03:36.850
+a block for example suppose that you have built its system and you want to try two inputs like step
+
+03:36.880 --> 03:44.290
+input on sine wave input simply add a manual switch why a pulse signal to it and double click to switch
+
+03:44.290 --> 03:45.640
+between the two signals
+
+03:57.140 --> 04:03.280
+multiple ports switch an integer on the top of the multi port switch their minds which of the rest of
+
+04:03.280 --> 04:09.850
+the elements will be connected to the output if the top input is for example 1 the first of these inputs
+
+04:09.910 --> 04:15.540
+will be selected as the top input is to the second of these inputs is selected and so on.
+
+04:15.760 --> 04:21.400
+Let's say an example I will double click a block and change the number of data points to 4
+
+04:25.630 --> 04:31.960
+copies a display block and where it copy for constant plucks and wires them
+
+04:51.150 --> 04:56.170
+I will change these values to mind minus nine
+
+05:01.810 --> 05:11.100
+zero now it is the first constant is ones in the first input is selected which is nine let's try for
+
+05:15.040 --> 05:16.090
+zero as selected.

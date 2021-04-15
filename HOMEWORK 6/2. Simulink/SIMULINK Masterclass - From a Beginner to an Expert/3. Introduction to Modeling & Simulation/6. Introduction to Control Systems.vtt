@@ -1,0 +1,199 @@
+WEBVTT
+
+00:00.300 --> 00:07.230
+Welcome back guys in this video I want to talk about control systems and any control system we have
+
+00:07.230 --> 00:09.400
+what we call planet or a process.
+
+00:09.930 --> 00:15.300
+And actually this contains a different mass mannequin emboldening or different mismanagement equations
+
+00:15.480 --> 00:18.030
+and govern the planet.
+
+00:18.060 --> 00:21.930
+We have an input and produces an output.
+
+00:22.290 --> 00:28.110
+If you want an example imagine that we are right things a mathematical equations of a suspension system
+
+00:28.650 --> 00:37.290
+we have an input of the disturbance of the road and the output is a response of the chassis or the response
+
+00:37.380 --> 00:44.270
+of the wheel and actually in any control system we want to control the output.
+
+00:44.540 --> 00:52.760
+We want to add a certain input to produce a desired output like for example a DC motor you want to add
+
+00:52.760 --> 00:57.260
+a certain voltage in order to have a certain speed on the shaft.
+
+00:57.380 --> 01:02.020
+The first thing to do that is you want to measure is the object of your system.
+
+01:02.030 --> 01:09.440
+So in any control system we have what we call a feedback and actually feedback may contains some different
+
+01:09.440 --> 01:11.060
+types of sensors.
+
+01:11.160 --> 01:17.480
+Two measures of Woods a planet or the system produces it calls feedback because this signal which is
+
+01:17.510 --> 01:27.760
+output is a feedback again to what we call a controller a controller is a brain of the control system.
+
+01:28.030 --> 01:35.590
+So it's a process of controlling any system consists of having a blunted supply can be for example a
+
+01:35.590 --> 01:36.630
+DC motor.
+
+01:36.730 --> 01:40.200
+So we have our metro circuit of this DC motor.
+
+01:40.420 --> 01:45.580
+We have the field circuit and we have for example to work and so on.
+
+01:45.610 --> 01:51.340
+So we are applying crucial flows on the circuit and we are applying that mechanical or Newton's low
+
+01:51.440 --> 01:59.260
+on this to work to produce will because most medical modelling of this planet smiling and modelling
+
+01:59.410 --> 02:08.110
+we defines inputs and outputs of the system and we add some sensors lags a potential meter in order
+
+02:08.110 --> 02:16.900
+to measure the speed or the output of this DC motor and we feedback this signal to what we call the
+
+02:16.900 --> 02:23.710
+controller a controller is a brain or the smart part of the system like API.
+
+02:23.710 --> 02:31.440
+The controller actually the controller tells what is the required input in order to produce a specific
+
+02:31.470 --> 02:37.450
+output based on some equations or some calculations which are done in this controller.
+
+02:38.880 --> 02:47.800
+So feedback is a signal and we are sensing error here or between the desired output and outputs upon
+
+02:47.800 --> 02:48.370
+it.
+
+02:48.450 --> 02:55.920
+Produce on the situation and calculations are done here in the controller in order to provide a certain
+
+02:55.950 --> 03:00.480
+output which is input to this planet to produce the desired output.
+
+03:00.480 --> 03:04.050
+So in any control system you need to define or to do three steps.
+
+03:04.050 --> 03:07.080
+Step number one is to lose a mathematical modelling of your system.
+
+03:07.080 --> 03:12.540
+Step number two is to select the feedback measurements so authors that you can select the different
+
+03:12.540 --> 03:15.870
+sensors two measures of different object.
+
+03:15.990 --> 03:18.930
+Step number three is to design your controller.
+
+03:18.930 --> 03:26.910
+You may for example want to use API the controller and the controller or the plane of the system relates
+
+03:26.940 --> 03:32.680
+and you input or the input to the system to the desired output.
+
+03:33.070 --> 03:35.710
+What are the types of any control systems.
+
+03:35.710 --> 03:38.550
+Actually we have two types of control system.
+
+03:38.590 --> 03:41.150
+Number one continuous system.
+
+03:41.170 --> 03:48.910
+If your system input or different parameters are changing was timed so we call this continuous system.
+
+03:48.910 --> 03:55.930
+An example is a DC motor you have a voltage which is changes over time and the output is the speed of
+
+03:56.020 --> 03:58.860
+the motor which is also changing over time.
+
+03:58.870 --> 04:04.870
+For example the suspension of a car you have a certain input which is a disturbance or a bump of the
+
+04:04.870 --> 04:05.560
+road.
+
+04:05.560 --> 04:08.190
+It can be for example sine wave.
+
+04:08.380 --> 04:14.860
+It's changing with time and the output is a response of the Chelsea or the response of the suspension
+
+04:14.860 --> 04:21.850
+system which is also changing with time so inputs and different variables which we call state variable
+
+04:21.970 --> 04:23.510
+change over time.
+
+04:24.610 --> 04:33.280
+So next time is discrete in this time the inputs and different variables of the system change between
+
+04:33.580 --> 04:35.200
+some defined points.
+
+04:35.200 --> 04:40.880
+So in this system you feed an input and you have a sudden change of your output if you want an example
+
+04:40.880 --> 04:50.800
+we can imagine you often for example you are feeding a signal of 1 or 0 to cook something and paste
+
+04:50.800 --> 04:51.830
+on this input.
+
+04:51.890 --> 05:00.640
+That often states changes immediately and at once to another state which is cooking your food for example
+
+05:00.740 --> 05:07.630
+to the input here is discrete one to turn on the oven and the output is also discrete which is cooking
+
+05:07.630 --> 05:15.460
+state can also switch off your oven by adding a discrete input like zero and the output is changing
+
+05:15.460 --> 05:23.140
+the over state from cooking to turned off a good topic on discrete systems is designing is a finite
+
+05:23.140 --> 05:28.420
+state machine and actually in this course you will find a complete section talking about how to use
+
+05:28.420 --> 05:35.290
+semi link in order to define finite state machines are funded state machines are used in many applications
+
+05:35.290 --> 05:44.650
+around you like oven microwaves washing machines maybe for example air conditioning traffic lights and
+
+05:44.740 --> 05:52.210
+many applications in automotive so this course will teach you how to use finance state machine as an
+
+05:52.210 --> 05:59.140
+application of discrete systems in order to design sometimes of discrete systems.
+
+05:59.140 --> 06:00.340
+That's all for this section.
+
+06:00.340 --> 06:03.280
+Thank you guys for watching and seems the next section.
+
+06:03.280 --> 06:06.610
+Don't forget to downloads Expedia from the electorate's horses.

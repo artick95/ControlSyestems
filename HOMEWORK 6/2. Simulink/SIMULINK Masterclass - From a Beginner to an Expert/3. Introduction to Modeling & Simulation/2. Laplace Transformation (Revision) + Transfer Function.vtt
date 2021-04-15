@@ -1,0 +1,49 @@
+WEBVTT
+
+00:00.640 --> 00:06.100
+Before we start mathematical and process modelling of systems we need to revise one of the most useful
+
+00:06.130 --> 00:13.210
+concepts in mathematics Laplace transform the strength of Laplace transform comes from its ability to
+
+00:13.210 --> 00:18.960
+transform differential equations into algebraic equations in all our mass medical modelling.
+
+00:18.970 --> 00:25.420
+We will deal with differential equations transforming differential equations into algebraic equations
+
+00:25.510 --> 00:32.200
+will make it easier to find what we call the transfer function and also will introduce a process modelling
+
+00:32.200 --> 00:41.390
+using plug diagrams plus transform can be defined as follow Laplace of F of T which is the function
+
+00:41.420 --> 00:48.280
+of T in time domain equals two and you function of S or the frequency domain.
+
+00:48.400 --> 00:58.050
+The blast of F of T equals to the integration from 0 to infinity of E to the minus SD times f of t d
+
+00:59.780 --> 01:04.450
+in this course we are interested in some functions which can be found in the following table
+
+01:09.510 --> 01:15.690
+moving to the transfer function and modelling and simulation transfer function or system function is
+
+01:15.690 --> 01:21.250
+a mathematical function relating the ambush or response of a forgiving system to the input for this
+
+01:21.260 --> 01:22.430
+system.
+
+01:22.470 --> 01:28.860
+For example the transfer functions that relates inputs X which is a displacement on a spring was the
+
+01:28.860 --> 01:35.220
+stiffness K to the output Y which you described the motion of a certain nice
+
+01:38.420 --> 01:43.820
+and the following lectures you will learn how to model some systems to fund the transfer functions and
+
+01:43.820 --> 01:46.220
+also throwing the plug diagrams.

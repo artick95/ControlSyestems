@@ -1,0 +1,121 @@
+WEBVTT
+
+00:01.180 --> 00:06.990
+The first lecture in dissection is an introduction to Samuel link and how to get his start to lose it.
+
+00:07.030 --> 00:13.820
+But before that you need to know what it's simulating simulating is a graphical programming environment
+
+00:13.820 --> 00:18.480
+for modeling simulation and analyzing dynamical systems.
+
+00:18.500 --> 00:26.360
+It was developed by math works company and it comes as a part of the MATLAB software Simeon link is
+
+00:26.480 --> 00:34.190
+plucks environment which means it uses blocks connected to each other to perform certain functions
+
+00:37.000 --> 00:39.790
+in order to open some link from matlab.
+
+00:39.970 --> 00:50.260
+Select Samuel link library or in the command window you can type Samuel link then enter the symbol link
+
+00:50.260 --> 00:52.630
+has two windows the first window.
+
+00:52.810 --> 01:00.340
+It's a similar link library browser which contains several libraries each library contains blocks the
+
+01:00.340 --> 01:05.370
+second window is the workspace window in which the symbol link Maldon is constructed.
+
+01:07.190 --> 01:13.830
+The Samuel link libraries window contains different libraries in different areas in science and engineering.
+
+01:13.880 --> 01:21.680
+For example for electrical engineering applications or library is like communications system tool box.
+
+01:21.710 --> 01:27.230
+There are other libraries like aerospace neural network and so on.
+
+01:27.670 --> 01:34.340
+There's also a similar link library which contains some libraries like commonly used libraries sinks
+
+01:34.550 --> 01:37.100
+sources and so on.
+
+01:37.100 --> 01:40.190
+Each library contains the different blocks.
+
+01:40.190 --> 01:43.100
+Again each block has a certain function.
+
+01:43.250 --> 01:48.470
+The similar link model is built by insert things of the from blocks and a model window.
+
+01:48.470 --> 01:54.050
+The blocks are connected to each other and forms what we call a process model.
+
+01:56.670 --> 02:02.660
+Now let's create our first model and the simple link we will build assemble a model of sine wave and
+
+02:02.670 --> 02:09.700
+after building this model you will learn about some blocks like sine wave scoop gain mosque.
+
+02:09.750 --> 02:14.940
+You will learn how to insert models into similar link model how to connect the different models and
+
+02:14.940 --> 02:17.690
+how to simulate and see as a result.
+
+02:17.880 --> 02:24.300
+The purpose of this model is to display that graph of a sine wave and compare it was another one with
+
+02:24.300 --> 02:26.610
+a gain of three.
+
+02:26.610 --> 02:34.320
+Now let's insert the sine wave block the sine wave block can be found in the sources library the sources
+
+02:34.320 --> 02:42.010
+library contains a different signals which can be inputs for different systems.
+
+02:42.070 --> 02:44.830
+Now let's drag and drop the sine wave block
+
+02:53.640 --> 02:59.730
+if I double click the sine wave block a window which contains a block parameters will appear in this
+
+02:59.730 --> 03:06.360
+line as you can see the sine wave equation was the different parameters as written o of T equals two
+
+03:06.360 --> 03:17.360
+amplitude times sine of frequency times time plus phase plus pass and frequency here is in red.
+
+03:17.370 --> 03:22.220
+Second if you scroll down you can assign some values to the parameters.
+
+03:22.260 --> 03:24.900
+In this example I will leave that the hold values
+
+03:32.660 --> 03:36.960
+now in order to display the simulated signal from the sine wave.
+
+03:36.980 --> 03:44.570
+We need to sing some different types of sinks and we will look at them later on but for now I will drag
+
+03:44.570 --> 03:53.790
+and drop the scoop sink the scoop sink is used to display the signal as a graph.
+
+03:53.840 --> 04:02.640
+Now I will drag the arrow of the sine wave and connect it to the scoop the model is ready to be simulated
+
+04:02.930 --> 04:05.970
+to run the model select run.
+
+04:06.270 --> 04:13.380
+It takes sometimes for processing and the result will be ready in order to displays a graph double click
+
+04:13.590 --> 04:14.550
+the scoop block.

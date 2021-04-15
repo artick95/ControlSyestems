@@ -1,0 +1,106 @@
+WEBVTT
+
+00:00.780 --> 00:07.140
+This lecture covers some of the sources blocks in Syria link as I stated before each system has an input
+
+00:07.230 --> 00:13.590
+and produces an output is a relation between inputs and outputs is the transfer function.
+
+00:13.590 --> 00:20.670
+For example imagine this vehicle and your as engineer has spelled a similarly ink module which simulates
+
+00:20.670 --> 00:23.310
+is a suspension system motion of this vehicle.
+
+00:23.310 --> 00:29.200
+Now imagine you want to feed an input to the system for example to simulate the bumps in the road.
+
+00:29.220 --> 00:34.160
+These inputs could be sine wave or a step function.
+
+00:34.160 --> 00:38.700
+The sources or inputs are found in sources blocks in simulating
+
+00:42.020 --> 00:49.040
+and as you can see I have created six models to show you six different types of sources.
+
+00:49.070 --> 00:54.590
+The first one is a step function the step function or step input gives a sudden change to a certain
+
+00:54.590 --> 00:56.870
+value in almost no time.
+
+00:56.870 --> 01:03.030
+So first we need to define the time base before this step action which is called step time.
+
+01:03.050 --> 01:09.610
+In our example step time equals to 1 and let's change the step final value to 5.
+
+01:09.620 --> 01:16.520
+So if this is the displacement for example this means after 1 second the displacement will jump suddenly
+
+01:16.580 --> 01:20.350
+to 5 units in no time and continues.
+
+01:20.360 --> 01:23.770
+Now let's run and see.
+
+01:23.990 --> 01:28.930
+This is a step time which is one second and the step equals 2 5.
+
+01:29.000 --> 01:30.260
+After this step time
+
+01:33.250 --> 01:38.740
+ramp input for example is a step and both represents a sudden displacement ramp.
+
+01:38.750 --> 01:45.450
+Input represents Z velocity is a displacement increases by one unit in one second.
+
+01:45.460 --> 01:49.620
+This means a slope of 1 in 0 and parameters.
+
+01:49.690 --> 01:50.590
+Let's see that
+
+01:54.900 --> 02:02.400
+as shown in the graph after 1 second the displacement increased 1 unit or after 2 seconds is a displacement
+
+02:02.430 --> 02:12.250
+increased 2 units the circled input is a sine wave and we have explained it before the sine wave general
+
+02:12.250 --> 02:22.000
+equation is amplitude times sine of frequency plus time times phase plus pious and you can change the
+
+02:22.000 --> 02:23.910
+different prompters from this window.
+
+02:31.640 --> 02:38.490
+A random number source this is produces a random number you can change the parameters like mean variance
+
+02:38.630 --> 02:44.870
+seed and finally is a sample time or the time this blocks produces a random number.
+
+02:44.880 --> 02:50.250
+In this example is a random number source produces a random number after 1 second
+
+02:53.430 --> 03:02.130
+so as you can see in this plot there is a random number each second repeating sequence source.
+
+03:02.220 --> 03:08.430
+If your input is repeated in the same pattern of Third the same time you can use this block to express
+
+03:08.430 --> 03:09.050
+your input
+
+03:15.600 --> 03:16.530
+as the last source.
+
+03:16.530 --> 03:21.310
+I want to address in this lecture is called for more space input.
+
+03:21.330 --> 03:25.550
+You can import a certain matrix or a value from the workspace.
+
+03:25.560 --> 03:34.650
+For example I have defined Victor A equals 2 0 1 2 3 and I'm using display pluck 2 shows a signal.

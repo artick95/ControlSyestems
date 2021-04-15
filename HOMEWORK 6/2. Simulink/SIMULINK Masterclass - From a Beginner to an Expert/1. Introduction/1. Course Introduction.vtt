@@ -1,0 +1,181 @@
+WEBVTT - https://subtitletools.com
+
+00:00:00.000 --> 00:00:04.466
+Welcome to MATLAB/SIMULINK Mastery Course. This is the course Introduction.
+
+00:00:06.066 --> 00:00:11.632
+There is nothing better than getting introduced to this course via an application from real life
+
+00:00:11.633 --> 00:00:14.666
+Think about how a simple dish washer works
+
+00:00:14.800 --> 00:00:18.800
+First you set the washing time which controls the time to clean the dishes
+
+00:00:19.100 --> 00:00:22.800
+The dish washer will run based on that time. The output is the dishes
+
+00:00:22.800 --> 00:00:27.700
+and regardless of the cleanliness of the dishes, the dish washer will stop after that set time.
+
+00:00:28.100 --> 00:00:30.233
+The dish washer here is our system
+
+00:00:30.233 --> 00:00:33.799
+There are some physics behind how the different components work
+
+00:00:34.066 --> 00:00:39.099
+And in order to design this dish washer you need to understand the physics
+
+00:00:39.100 --> 00:00:41.666
+and express it in Mathematical Equations
+
+00:00:41.800 --> 00:00:46.100
+There are also other techniques to represent how the dish washer works
+
+00:00:46.200 --> 00:00:49.400
+Not only that but also simulating the output of the dish washer
+
+00:00:49.400 --> 00:00:53.033
+based on a certain input without even building the dish washer.
+
+00:00:55.166 --> 00:01:01.666
+If you have loaded the dish washer with 10 dishes full of cake the set time might not be enough to clean them
+
+00:01:02.100 --> 00:01:06.533
+So imagine that we have added a sensor to measure how the dishes are cleaned
+
+00:01:06.533 --> 00:01:10.433
+and we compared this measurement to a desired level of cleanliness
+
+00:01:10.900 --> 00:01:15.066
+the difference between them is fed to what we call a controller
+
+00:01:15.066 --> 00:01:23.699
+which is designed to analyse and provide correction action to the time set in order to reach the desired level of cleanliness.
+
+00:01:24.033 --> 00:01:26.999
+We call this closed loop control system.
+
+00:01:27.533 --> 00:01:31.799
+To design any control system you have to follow 3 different steps
+
+00:01:32.166 --> 00:01:36.399
+1- Model the system which in our case the dish washer
+
+00:01:36.400 --> 00:01:40.966
+This could be done by writing the mathematical equations to describe how it works
+
+00:01:41.133 --> 00:01:46.199
+Further modelling could be done using SIMULINK to visualize the different system components.
+
+00:01:46.533 --> 00:01:51.666
+2 – You have to understand clearly what is the purpose of this control system
+
+00:01:51.666 --> 00:01:59.866
+in our example we want our controller to update the time we’ve set in order to reach the required level of cleanliness.
+
+00:02:00.133 --> 00:02:03.033
+Finally design and simulate the controller.
+
+00:02:03.366 --> 00:02:11.066
+These 3 steps require certain skills to master, and these skills are covered in details inside this course.
+
+00:02:11.533 --> 00:02:16.166
+In addition you need understand how the software of the dish washer works
+
+00:02:16.166 --> 00:02:20.166
+for example how this dish washer respond to different user inputs
+
+00:02:20.166 --> 00:02:25.032
+like turning on or off, setting time, chose programme and so on
+
+00:02:25.033 --> 00:02:30.333
+and this is done by what we finite state machine which is also part of this course.
+
+00:02:32.333 --> 00:02:36.999
+Based on that we can summarize the course structure to 4 different sections.
+
+00:02:37.166 --> 00:02:42.632
+Section 1: Getting started with MATLAB/SIMULINK which is a friendly step by step introduction
+
+00:02:42.633 --> 00:02:45.099
+to master the basics of SIMULINK.
+
+00:02:45.266 --> 00:02:51.632
+Section 2: Introduction to modelling & Simulation, in which you will learn how to do both the mathematical modelling
+
+00:02:51.633 --> 00:02:59.266
+and process modelling using block diagrams for different types of systems like (Mechanical – Electrical & Hydraulic)
+
+00:02:59.900 --> 00:03:05.666
+Section 3: which is an advanced section in which you learn how to use MATLAB SIMULINK
+
+00:03:05.666 --> 00:03:11.999
+to model and simulate real life applications and also how to build and tune different controllers
+
+00:03:12.466 --> 00:03:17.832
+Section 4: you will learn how to design and simulate Finite State Machines
+
+00:03:20.033 --> 00:03:27.166
+In this course you will solve some problems from real life like: Modelling & simulation of a car suspension system
+
+00:03:27.166 --> 00:03:29.799
+Modelling & Simulation of a DC Motor
+
+00:03:29.900 --> 00:03:37.166
+We will also look at problem of tank level controlling, we will design a PID controller to solve this problem
+
+00:03:37.166 --> 00:03:44.932
+We will design and simulate the system of traffic light and also we will design and simulate the car turning signal system.
+
+00:03:45.133 --> 00:03:50.433
+We update this course from time to time which means new projects will be added. And you will be informed.
+
+00:03:51.700 --> 00:03:56.200
+We ask you to have some knowledge prior to join this course they are
+
+00:03:56.333 --> 00:04:02.499
+1 – Having a MATLAB/SIMULINK software you can download the new vrisions from mathwork website
+
+00:04:03.066 --> 00:04:08.999
+2 – You should be familiar with MATLAB , the syntax, how to programme in MATLAB using M-files
+
+00:04:09.000 --> 00:04:11.333
+Using Mtahematical Functions and so on.
+
+00:04:11.333 --> 00:04:15.466
+3 – It will be very good if you have a mathematical background.
+
+00:04:16.333 --> 00:04:21.399
+In order to get the maximum benefit out of this course follow my 3 steps
+
+00:04:21.533 --> 00:04:28.699
+Step 1 Watch every lecture first address the problem discussed , pause if you want to think about this problem
+
+00:04:28.700 --> 00:04:35.733
+And after finishing the lecture try to re model and solve the problem yourself. So Watch and Apply.
+
+00:04:36.200 --> 00:04:41.333
+Step 2 Finish all the quizzes, assignments and don’t skip them.
+
+00:04:42.166 --> 00:04:46.766
+Step 3 Ask for help rembeber We are here to help you
+
+00:04:46.766 --> 00:04:50.532
+if anything is not clear don’t hesistate to use the dicssuion board from here
+
+00:04:55.633 --> 00:04:59.399
+And don’t forget to download any lecture resources from here.
+
+00:04:59.933 --> 00:05:08.466
+I would like to say that this course is not perfect but we promise to provide the best support during the course.
+
+00:05:08.466 --> 00:05:14.866
+If you’ve not enrolled yet keep watching the free preview and you are more than welcome to join us in this course
+
+00:05:15.133 --> 00:05:18.166
+Thank guys for watching I'm REZK AHMED
+
+00:05:18.533 --> 00:05:20.666
+Your course instructor

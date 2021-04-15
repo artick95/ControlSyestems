@@ -1,0 +1,439 @@
+WEBVTT
+
+00:00.810 --> 00:03.320
+We'll come back to court record world.
+
+00:03.850 --> 00:08.390
+This video will show you how to implement the very damning coefficient in your model.
+
+00:08.590 --> 00:13.240
+I will lose it in the time domain molded by examining the forces the number exerted.
+
+00:13.240 --> 00:18.790
+We have two forces the force of number exerts you in compression of stroke and the force during what
+
+00:18.790 --> 00:20.360
+we call rebound stroke.
+
+00:20.450 --> 00:24.920
+And number in motion we exert these two forces because of a very simple reason.
+
+00:25.030 --> 00:27.350
+The number velocity changes over time.
+
+00:27.370 --> 00:34.180
+One important thing to keep in mind in real lives that mean coefficient is not constant the compression
+
+00:34.210 --> 00:36.750
+then being coefficients are different Zen.
+
+00:36.810 --> 00:39.210
+The rebound then being coefficients.
+
+00:39.210 --> 00:44.710
+And I'm saying coefficients not coefficient because of them being coefficient is changing with the speed
+
+00:44.710 --> 00:45.410
+also.
+
+00:45.430 --> 00:51.790
+So when you are building a system that includes a number you must have what we call dumper graph which
+
+00:51.790 --> 00:58.000
+shows the relation between numbers speed and forces exerted in post compression and rebounds talk for
+
+00:58.000 --> 00:58.540
+the quarter.
+
+00:58.550 --> 01:04.480
+Kamal does I have this table which relates the speed and the damage coefficient of the number I have
+
+01:04.480 --> 01:07.940
+used in post compression and rebounds strokes.
+
+01:08.050 --> 01:15.360
+So how I'm going to implement these data into my mold and I need to create a model and replace it with
+
+01:15.360 --> 01:22.900
+a number coefficient C once this model takes a number of speed as an input and produces a number coefficient
+
+01:22.930 --> 01:23.990
+as an output.
+
+01:24.190 --> 01:29.470
+How I will use it to look up tables for compression and rebound data.
+
+01:29.470 --> 01:32.530
+I will take a velocity signal if it's positive.
+
+01:32.530 --> 01:35.410
+I will use the compression table if it's negative.
+
+01:35.500 --> 01:37.120
+I will use the rebound table.
+
+01:37.120 --> 01:41.990
+Please note that my sign convention is plus for compression and minus 40 rebound.
+
+01:42.000 --> 01:47.530
+All of these necessary calculations will be done on a separate subsystem which I will use it in my main
+
+01:47.530 --> 01:49.300
+quarter car model system.
+
+01:49.330 --> 01:50.900
+So let's see that.
+
+01:51.040 --> 01:58.830
+As you can see these are the different values for the System variables I have added three lines at the
+
+01:58.830 --> 01:59.370
+end.
+
+01:59.370 --> 02:05.740
+I have added some velocity which is from twenty five onset to one hundred and fifty was a step off twenty
+
+02:05.740 --> 02:12.080
+five and I have added to information about the damping coefficient in pulse compression and rebounds
+
+02:12.080 --> 02:16.200
+strokes which are in these metrics.
+
+02:16.310 --> 02:22.250
+So now I have v c compression and c rebound.
+
+02:22.320 --> 02:25.880
+This is a quarter car model in the time domain.
+
+02:26.070 --> 02:32.850
+I need to replace the stumbling coefficient with a system that simulates as a variation of the coefficients
+
+02:32.850 --> 02:37.180
+of temping so I will go two blocks.
+
+02:37.260 --> 02:44.090
+I will search for subsystem and click enter right click Add to Untitled.
+
+02:44.510 --> 02:49.630
+This is my new subsystem which will replace the damaged coefficient.
+
+02:49.630 --> 02:56.930
+The subsystem takes input 1 and produces output 1 input 1 is the speed output one is a dumbbell coefficient
+
+02:57.290 --> 03:05.550
+I will double click the subsystem as you can see I have input 1 output 1 I will look at some later I
+
+03:05.550 --> 03:21.350
+will go 2 blocks lookup tables I will add one day lookup table signal rooting I will select switch meth
+
+03:21.380 --> 03:29.400
+operations APs and for demonstration I will add this play block
+
+03:32.340 --> 03:37.780
+and from commonly used blocks I will add constant.
+
+03:37.860 --> 03:47.890
+Now let's build a system I will drag them here.
+
+03:48.090 --> 03:50.000
+This is a first look up table.
+
+03:50.370 --> 03:57.690
+This lookup table will relate is the velocity with the damping coefficients in compression so peak points
+
+03:57.840 --> 04:06.010
+are velocity and this is the then mean coefficient in compression C on the score com.
+
+04:06.480 --> 04:06.900
+OK
+
+04:11.860 --> 04:17.620
+so as you can see I have added the different values for the compression that being coefficient was the
+
+04:17.620 --> 04:18.160
+speed
+
+04:23.130 --> 04:24.510
+I can rename this
+
+04:31.170 --> 04:31.980
+compression
+
+04:37.400 --> 04:38.810
+I will add another lookup table
+
+04:47.050 --> 04:54.850
+this lookup table will take V as breakpoints and see rebound now.
+
+04:54.900 --> 04:55.370
+Okay
+
+04:59.970 --> 05:08.450
+as you can see this or is a different values for them being coefficients with the speed okay.
+
+05:10.400 --> 05:11.990
+This is repellant
+
+05:29.140 --> 05:30.260
+now.
+
+05:30.650 --> 05:41.780
+This constant is for demonstration so for example if I have a speed of 25 the speed sign is plus I will
+
+05:41.780 --> 05:50.360
+feed this speed for the first time to absolute value block in order to take as a positive sign always
+
+05:50.420 --> 05:51.410
+of the speed
+
+05:54.930 --> 06:01.530
+if the speed is a minus which is rebound I will remove this sign to enter enters a table and takes a
+
+06:01.530 --> 06:08.250
+value in the appropriate way because we have a relation between the speed and the ending coefficients
+
+06:08.370 --> 06:11.390
+all in positive signs.
+
+06:11.760 --> 06:16.300
+So I will take another signal from here to the absolute.
+
+06:17.610 --> 06:25.180
+I will feed this signal to the first look up table which is compression and this one to the second lookup
+
+06:25.180 --> 06:26.770
+table which is rebound
+
+06:30.120 --> 06:34.020
+if I wired this display plug in post compression and rebound
+
+06:38.770 --> 06:41.040
+and try to run this model.
+
+06:41.800 --> 06:48.640
+As you can see in the first display which is the damping coefficient in compression I have twelve and
+
+06:48.640 --> 06:50.650
+the number coefficient in the rebound.
+
+06:50.650 --> 06:56.290
+I have for 2 different values for the them Uncle efficient which one is the correct one.
+
+06:56.380 --> 07:01.350
+This one is the correct one because the sign of the speed is plus twenty five.
+
+07:02.890 --> 07:15.300
+If for example the speed is minus 20 or minus twenty five okay what's will happen is I will take minus
+
+07:15.300 --> 07:17.810
+twenty five I will things absolute value of it.
+
+07:17.940 --> 07:23.880
+It's a twenty five I will enter this table and the answer will be twelve again.
+
+07:24.060 --> 07:30.370
+I will take minus twenty five absolute value which is twenty five I will enter city bound table and
+
+07:30.370 --> 07:38.250
+the answer is for which value is then Min coefficient is correct this time for is correct because the
+
+07:38.250 --> 07:43.950
+sign of the speed is in minus so this one is correct.
+
+07:43.960 --> 07:47.850
+So I've used a switch block in order to compare the speed with zero.
+
+07:47.950 --> 07:53.120
+If this be this bigger Zen zero I will think that I'm being coefficient from compression if this be
+
+07:53.170 --> 08:02.050
+this less than zero I will examine coefficient from rebound so I will whereas this here another signal
+
+08:02.050 --> 08:11.400
+here to make the comparison if it's through let's remove this display if it's through
+
+08:14.750 --> 08:22.690
+the upper signal will be executed if it falls the lower signal will be executed.
+
+08:22.690 --> 08:29.560
+Now I can add display on other display so sinks display
+
+08:34.430 --> 08:41.570
+now minus twenty five is a negative sign so minus twenty five is less than zero so I will take the signal
+
+08:41.930 --> 08:44.410
+of this damning coefficient from the rebound table.
+
+08:44.450 --> 08:46.120
+So let's run this model.
+
+08:46.120 --> 08:57.900
+The answer is for now I will remove this in this I will take this input and put one to the subsystem
+
+08:58.360 --> 09:01.090
+an hour between to the subsystem.
+
+09:01.110 --> 09:02.880
+Now I have built this model.
+
+09:02.880 --> 09:06.330
+This model takes a speed as an input and produces.
+
+09:06.330 --> 09:12.960
+So that mean coefficient as an output it compares between two different tables or two different values
+
+09:12.960 --> 09:14.940
+of the then being coefficients.
+
+09:14.940 --> 09:20.040
+The first table is a dumping coefficient in compression and the second table is a dumping coefficient
+
+09:20.370 --> 09:24.120
+and rebound depending on the sign of the velocity.
+
+09:24.120 --> 09:33.080
+We take the value of the then being coefficient I can go back to my main model.
+
+09:33.080 --> 09:42.330
+This is the subsystem I have used let's flip this block.
+
+09:42.450 --> 09:45.510
+Now what is input to this subsystem.
+
+09:45.640 --> 09:52.260
+Again if we look at this picture over December we will find that we have two different points we have
+
+09:52.280 --> 09:59.710
+this point that is connected to the Chelsea the speed or the velocity of this point is V C and we have
+
+09:59.710 --> 10:06.760
+this point that is connected to suspension system the speed or the velocity of this point is v is the
+
+10:06.760 --> 10:13.410
+force of this number is then Min coefficients time the difference between these two speed.
+
+10:13.730 --> 10:21.670
+So the input to the model I have created to simulate the varying damping coefficients is v c minus V
+
+10:21.670 --> 10:29.080
+is if we see a minus V is is in plus I will have compression so I will take the data from the lookup
+
+10:29.080 --> 10:35.940
+table of the compression that main coefficient if we see a minus V as is a minus I will take Zare bound
+
+10:35.950 --> 10:42.430
+dumping coefficient if you want an example for demonstration imagines that we is twenty five in this
+
+10:42.430 --> 10:48.520
+direction which is the compression direction so it's plus and V S is in the same direction but this
+
+10:48.520 --> 10:57.040
+time fifty deltas B equals to VCU minus V is so twenty five minus fifty equals to minus twenty five.
+
+10:57.100 --> 11:03.850
+So is this number is in rebound the stroke you can emissions at this point C is moving with twenty five
+
+11:03.850 --> 11:12.520
+mm per second but the S is moving was fifty millimeter per second so the S is leading V.S. so that number
+
+11:12.520 --> 11:20.410
+will be rebound not compressed and the forces then ember exerts is the relative velocity between these
+
+11:20.410 --> 11:28.970
+two points time zone then being coefficient if you want another example imagine that the C is also twenty
+
+11:28.970 --> 11:33.670
+five in this direction but this is fifty in another direction.
+
+11:33.670 --> 11:44.770
+So Delta V equals to twenty five minus minus fifty which is twenty five plus fifty equals to seventy
+
+11:44.770 --> 11:45.450
+five.
+
+11:45.580 --> 11:53.590
+So this number will be compressed relative his speed is seventy five or the speed of this chassis relative
+
+11:53.590 --> 12:01.690
+to the suspension mount and the force is a number exerts is seventy five millimeter per second times
+
+12:01.690 --> 12:08.620
+a damning coefficient this time the in coefficient from the compression table.
+
+12:08.820 --> 12:16.590
+Now back to our model what I need to make is to feed the relative speed of the chassis minus the suspension
+
+12:16.590 --> 12:22.650
+system into this subsystem so I will call business
+
+12:26.420 --> 12:31.580
+this is the speed of the suspension system and this is the speed of the chassis system so this is in
+
+12:31.580 --> 12:32.090
+plus
+
+12:36.500 --> 12:37.790
+and this is in minus
+
+12:50.280 --> 12:57.250
+so output is input 1 2 as a subsystem and subsystem will produces at them being coefficient.
+
+12:57.260 --> 13:03.090
+Now is this them being coefficient will be multiplied by the output of the signal.
+
+13:03.500 --> 13:11.820
+I need to delete C1 which is our constant dumping coefficient and I will remove the signal and also
+
+13:11.820 --> 13:18.390
+this one ends the output of this subsystem is a new damping coefficient.
+
+13:18.600 --> 13:21.470
+I will add from MSA operation product
+
+13:26.720 --> 13:33.780
+I'll drag it here as a product Block takes to signal and multiply them together.
+
+13:34.030 --> 13:38.700
+So I will flip this block.
+
+13:38.780 --> 13:41.230
+This is the first signal.
+
+13:41.390 --> 13:42.430
+This is the second one
+
+13:45.500 --> 13:54.220
+and the output is fitted to this point and another signal is speed it to this point.
+
+13:56.060 --> 14:01.860
+If you are confused you can check modelling and simulation of course our car model in time to mean now.
+
+14:01.970 --> 14:11.770
+Our model is ready to run and simulate run double click here to see the response of the suspension system.
+
+14:11.800 --> 14:20.870
+We have some oscillations here on some damped and this is the response of the chassis.
+
+14:21.150 --> 14:25.950
+If you want to see the variation of the damage coefficient was time I will copy the scope
+
+14:28.500 --> 14:29.940
+and I will take the signal
+
+14:32.620 --> 14:36.660
+now run.
+
+14:37.100 --> 14:42.800
+As you can see that the main coefficient is not constant over time it's changing based on whether it's
+
+14:42.800 --> 14:51.930
+compression or rebound and based on the speed and if you want also to see how the speed changes will
+
+14:51.950 --> 15:02.470
+take signal from here fitted to the scoop and run and this is the speed it goes from positive signs
+
+15:02.470 --> 15:04.240
+to negative signs and so on.
+
+15:06.070 --> 15:09.480
+Thank you guys for watching and see you in the next three to.

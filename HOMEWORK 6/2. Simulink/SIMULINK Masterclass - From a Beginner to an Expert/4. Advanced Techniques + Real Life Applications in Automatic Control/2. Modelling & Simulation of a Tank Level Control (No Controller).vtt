@@ -1,0 +1,205 @@
+WEBVTT
+
+00:00.150 --> 00:01.110
+Welcome back guys.
+
+00:01.290 --> 00:07.710
+So in this video I'm going to talk about tank control problem and actually I will cover this topic in
+
+00:07.710 --> 00:09.460
+three different lecture.
+
+00:09.580 --> 00:14.880
+The first lecture we are going to do is a mathematical modelling of the hang control system and we are
+
+00:14.880 --> 00:19.110
+going to do the simulation by using some link in the next lecture.
+
+00:19.110 --> 00:24.390
+We are going to add a control system which is proportional controller and I will show you how to do
+
+00:24.390 --> 00:30.420
+this by using semi link and in later lecture when I talk about pure idea controller I will use this
+
+00:30.420 --> 00:35.420
+system as an application.
+
+00:35.650 --> 00:37.450
+We have here a simple tank.
+
+00:37.540 --> 00:43.770
+This one here right of this thing is etch which is changing with time.
+
+00:43.810 --> 00:53.160
+This thing has a capacitance C or area equals to a Q2 is being provided to this thing PI an input see
+
+00:53.160 --> 00:54.040
+the V.
+
+00:54.040 --> 01:01.140
+So we have a shuttle here and we are opening or closing the throttle was a speed CTV Dot.
+
+01:01.530 --> 01:08.830
+There is a constant here K V which represents the relation between the speed of the throttle and the
+
+01:08.830 --> 01:10.490
+flow rate.
+
+01:10.510 --> 01:16.500
+So here we will have an equation Q2 flows inside this thing and the thing is being felt.
+
+01:16.510 --> 01:26.710
+So h changes and Q one leaves this thing two is throttle with resistance R so it's a very simple problem.
+
+01:26.830 --> 01:29.410
+Now let's see the mathematical equations we have here.
+
+01:29.410 --> 01:38.820
+The first equation from here we have the constant K V Q two equals two K V Times seat of adult.
+
+01:38.980 --> 01:39.910
+The second equation
+
+01:42.440 --> 01:45.720
+Q2 minus Q one equals two.
+
+01:45.800 --> 01:46.960
+Area of this tank.
+
+01:46.970 --> 01:51.220
+Times H dot or the change of the thing kind.
+
+01:51.440 --> 01:52.520
+Continue with the equation
+
+01:55.270 --> 02:02.110
+sir the equation of the shuttle we have q 1 which enters the shuttle times the slope of the resistance
+
+02:02.500 --> 02:04.900
+equals 2 height.
+
+02:04.900 --> 02:06.660
+Three basic equations.
+
+02:06.670 --> 02:17.680
+So we have the input here which is see the V and the output here is etch so sit Sylvie as an input is
+
+02:17.680 --> 02:28.390
+multiplied by k v to produce Q2 and Q2 minus eight times each dot to produce Q1 Q1 is multiplied by
+
+02:28.390 --> 02:36.010
+our to produce Etch Etch is differentiated to produce etch dot which is fitted back in order to have
+
+02:36.220 --> 02:36.980
+Q1.
+
+02:37.030 --> 02:46.450
+So let's see that on similar link as you can see I have created a new model and Samuel link from the
+
+02:46.450 --> 02:47.010
+LEI period.
+
+02:47.020 --> 03:00.660
+I will add from commonly used blocks scoop some and they'll let gain and from continuous I will add
+
+03:00.660 --> 03:06.360
+derivative and from sources I will add ramp source
+
+03:11.400 --> 03:12.830
+now back to the system
+
+03:22.460 --> 03:29.660
+by looking at the equations we have CW dot as an input so I have choose ramp input which represents
+
+03:29.720 --> 03:37.540
+the change of throttle angle with time CTV the times K V equals to Q2.
+
+03:38.010 --> 03:45.710
+So I have an m file this m file contains a different values for the different system parameters K V
+
+03:45.710 --> 03:51.190
+equals to 0 point or 1 meter cubed per second per it.
+
+03:51.200 --> 04:00.170
+So 1 read makes metric cubed per second flows inside the system the Volt resistance R equals 2 0 point
+
+04:00.170 --> 04:09.170
+to 5 second over M squared and we have the tank area equals two point eight metres squared.
+
+04:09.170 --> 04:21.660
+Now back to our model this is the ramp input or CTV dot as multiplied by k v so double click here and
+
+04:21.660 --> 04:33.110
+this is K C to produce Q2 Q2 is then subtracted from x times a.
+
+04:33.110 --> 04:38.130
+So double click here plus and minus
+
+04:42.590 --> 04:54.950
+and we have here in the signal a Times etch so I will copy another gain right click flip this one here
+
+04:55.040 --> 04:59.020
+a and I would wear it
+
+05:03.000 --> 05:12.710
+to produce Q1 Q1 is then multiplied by the stroke of the resistance to produce etch.
+
+05:13.000 --> 05:15.100
+So this is another gain
+
+05:17.830 --> 05:19.110
+double click.
+
+05:19.140 --> 05:23.080
+This is r and r what is etch.
+
+05:23.640 --> 05:36.530
+And it will be plotted using the scoop and I will take signals from etch flip this block the signal
+
+05:36.530 --> 05:46.340
+will be differentiated to have etch not an etch dot times a to produce a Times etch dot which is in
+
+05:46.340 --> 05:53.190
+subtracted from Q2 to produce Q1 Q1 times are to produce etch.
+
+05:53.270 --> 05:55.500
+Now let's simulate this system.
+
+05:55.530 --> 06:06.340
+I'll change this time to 5 and go back to my end file clerk run now as you can see I have different
+
+06:06.340 --> 06:15.510
+values of the different parameters in the workspace so I can run my model without any errors now run
+
+06:17.320 --> 06:20.000
+double click on the scoop to see the response
+
+06:23.010 --> 06:28.950
+as you can see as a time increased the height of this tank is increased also.
+
+06:29.250 --> 06:33.600
+So if they're five seconds we have a height of twelve millimeters
+
+06:39.040 --> 06:47.590
+I can change a slope of the frame input in order to increase the change of the opening evolve angular
+
+06:47.590 --> 06:49.070
+position was time.
+
+06:49.180 --> 06:54.890
+So for example five apply and OK now run
+
+07:00.520 --> 07:07.000
+as you can see the final height of the thing is increase to 60 millimeters.
+
+07:07.150 --> 07:08.650
+That's all for this video.
+
+07:08.650 --> 07:09.760
+Thank you guys for watching.
+
+07:09.770 --> 07:15.920
+In the next video we're going to see how to control the system by using proportional controller.
+
+07:15.970 --> 07:17.320
+So see you there.

@@ -1,0 +1,304 @@
+WEBVTT
+
+00:02.840 --> 00:08.060
+Hello mentoring students and welcome to this review in which I will show you how to model and simulate
+
+00:08.060 --> 00:12.330
+the courts are a core model first.
+
+00:12.350 --> 00:20.390
+What is meant by a co-author or model author or car model is used to model and simulate the suspension
+
+00:20.390 --> 00:22.610
+system of a vehicle.
+
+00:22.610 --> 00:28.780
+It assumes that we have four corners of a car and we are modelling only one corner.
+
+00:28.820 --> 00:33.210
+As you can see in this picture we have here is a Chelsea was M.C. this.
+
+00:33.230 --> 00:40.220
+Chelsea have a motion of why C of t the Chelsea is connected to is a wheel via suspension system and
+
+00:40.220 --> 00:48.050
+the spring was a stiffness equals to K1 the number with them being coefficient equals to C1 the suspension
+
+00:48.050 --> 00:56.300
+system has mass M.S. we have K two which is the stiffness of its higher and c 2 which is a damning coefficient
+
+00:56.330 --> 01:03.110
+of Hitler we will neglect C to for this example so please take care of that the suspension system moves
+
+01:03.110 --> 01:11.990
+was y as with T and we have ambled from Brood X of t it may be step input or a sine wave and we can
+
+01:11.990 --> 01:20.870
+consider the suspension system as two masses blocks M.C. an M S M C is connected to M S V K one C one
+
+01:20.960 --> 01:28.900
+and it moves was y c of T M suspension moves with Y as with T and the tire stiffness equals two key
+
+01:28.900 --> 01:34.010
+to and then the coefficient of thirty equals to see to which in our case equals to zero.
+
+01:34.340 --> 01:43.940
+So let's see the equation of motion for this system by balancing the forces on AMC we have M.S. Y see
+
+01:43.940 --> 01:56.680
+the plot blocks C1 y c dot plus k 1 y c equals to see one Y is not lost k 1 y s for the suspension mass
+
+01:56.690 --> 02:07.880
+we have m s why s them a lot plus C1 Y is thought plus K two plus key one times Y S equals to see one
+
+02:08.270 --> 02:18.060
+y c dot plus k 1 y c plus key two times input x arranging this equation will make it easier to model
+
+02:18.070 --> 02:27.710
+this system owns a similar link so y see the will dot equals to 1 over M.S. times C1 times y s not minus
+
+02:27.710 --> 02:36.830
+why C not plus k 1 times Y S minus Y C the second equation y is double Delta equals 2 1 over M.S. times
+
+02:36.920 --> 02:47.600
+minus C1 times why s not minus why is he not minus K Juan times Y S minus Y C plus K two times x minus
+
+02:47.600 --> 02:56.020
+y s so as we have stated in the previous example we have Y C double dot B will integrate this for the
+
+02:56.020 --> 03:03.820
+first time to produce y c dot and we will integrate it again to produce Y C which is the response of
+
+03:03.820 --> 03:10.540
+the chassis and also for Y is the block we will integrate it two times two got Y as or the suspension
+
+03:10.540 --> 03:18.910
+movement and we will feedback y c dot Y C and also Y is not Y S in order to complete the model.
+
+03:19.390 --> 03:21.970
+So lets see this on the Sigma link
+
+03:24.870 --> 03:32.470
+as you can see I have created a new model from the semi link blocks library I will add the following
+
+03:32.470 --> 03:35.590
+blocks from continuous system I will add integrator
+
+03:38.580 --> 03:48.100
+from syncs I will add a scoop from commonly use blocks I will add gain and also I will add some
+
+03:50.890 --> 03:53.350
+from sources I will add the step input
+
+03:57.520 --> 03:59.020
+let's move this from here
+
+04:07.060 --> 04:14.230
+I have created and file this and file contains all the values of the different variables so I have M.S.
+
+04:14.230 --> 04:24.070
+equals to 60 kg which is quarter of the Chelsea Mass I have m for suspension equals 212 KG I have K1
+
+04:24.370 --> 04:33.070
+for the suspension system equals 223 Newton per mm and then B coefficient of C1 equals to thirty Newton
+
+04:33.070 --> 04:41.340
+second over mm and the stiffness of the third K two equals two seven hundred so I will run the script
+
+04:42.480 --> 04:49.600
+change folder and if I get back to the workspace I will find that the different values for our variables
+
+04:50.350 --> 04:58.000
+now pack to our model the first equation we have here one over M.S.
+
+05:06.200 --> 05:13.280
+Where is this this signal here is why C double dot if I integrated this signal for the first time I
+
+05:13.280 --> 05:17.720
+will produce Y see what I want to copy this poker game.
+
+05:18.500 --> 05:24.770
+So again if I integrate it twice he thought it will produce Y C and now scoop
+
+05:28.250 --> 05:29.690
+so this is the first equation
+
+05:32.500 --> 05:37.770
+the second equation I have here one over m s
+
+05:41.540 --> 05:49.520
+and also I will have two integrators so I'm Kobe and drags them and wires a signal here and this one
+
+05:49.520 --> 05:52.850
+here and another scoop wires is here.
+
+05:53.570 --> 06:02.240
+So this signal here is why is the blue dot integrating things a signal will produce Y is not integrating
+
+06:02.270 --> 06:10.610
+again produces y s and the school to look at the graph of Y es now in order to complete the model we
+
+06:10.610 --> 06:12.500
+need to add some mission point
+
+06:15.860 --> 06:23.380
+by looking at the equation we have Y see the blue dot equals to one over M.S. times see 1 times Y has
+
+06:23.390 --> 06:31.460
+thought minus Y see dot so this C1 y s dot minus why is he dot is repeated in post equation so I will
+
+06:31.460 --> 06:40.250
+take a signal from y s dot and subtracted from Y see Dot signal and multiply them times see one and
+
+06:40.280 --> 06:45.110
+I will use this in post equation so first I will flip this block
+
+06:48.000 --> 06:49.620
+and I will take the signal
+
+06:52.580 --> 07:02.390
+this is why C that and this is why it stopped and I need to change a sign.
+
+07:02.420 --> 07:04.250
+Why is he locked is in minus
+
+07:07.700 --> 07:11.930
+and the output of the signal will be multiplied to a game clock which is key one.
+
+07:11.940 --> 07:17.330
+So I will copies this right click and flip.
+
+07:17.410 --> 07:18.640
+This is key one
+
+07:23.590 --> 07:25.960
+and I will Ed Olmos or some plot
+
+07:29.160 --> 07:31.680
+right click and I will flip
+
+07:35.050 --> 07:37.810
+I will change the shape of this block to rectangle
+
+07:43.570 --> 07:48.100
+and plus plus now.
+
+07:48.130 --> 07:57.590
+OK all expenses again looking at the equation we have to some see one times Y as not minus Y.
+
+07:57.610 --> 08:01.760
+See that plus key 1 times Y is minus y c.
+
+08:01.900 --> 08:05.970
+So I need to make Q1 times Y S minus y c.
+
+08:06.130 --> 08:09.370
+Again I will copy this block.
+
+08:09.730 --> 08:15.310
+I will think is a signal of Y S and minus here and the signal of Y C
+
+08:18.560 --> 08:21.670
+and almost all gain.
+
+08:21.740 --> 08:26.760
+So is this one is C 1 not k 1 but this one is K one
+
+08:34.910 --> 08:35.330
+now.
+
+08:35.330 --> 08:42.810
+To complete the model I would wire k 1 signal here and C1 signal here.
+
+08:42.820 --> 08:48.550
+So now I have developed the first equation in order to build a second equation.
+
+08:48.550 --> 08:52.720
+I will add almost or some pluck so I would copy this one
+
+08:57.490 --> 09:00.590
+this far this year and whereas this one here.
+
+09:00.590 --> 09:09.170
+We need to subtract signal c 1 times why still minus Y see Dot and signal K one finds Y S minus Y C
+
+09:09.680 --> 09:15.470
+and add them to the signal K two times x minus y s
+
+09:18.850 --> 09:25.200
+so first I will change the sign of this block to minus minus plus
+
+09:27.850 --> 09:33.160
+Okay I will take signal from here and one or two minus
+
+09:39.280 --> 09:43.290
+and from the signal also and two minus.
+
+09:43.430 --> 09:51.580
+Now I need to make the signal off key two times x minus y is so this is a step in but
+
+09:54.420 --> 09:57.260
+and I will copy this block.
+
+09:57.330 --> 09:58.380
+This is key to
+
+10:04.390 --> 10:06.780
+and I will copy some point
+
+10:09.900 --> 10:18.930
+step and what is in surplus and I will take a signal from Y S and minus and the output signal is multiplied
+
+10:18.930 --> 10:27.190
+to k to then the output of the signal is added to this point.
+
+10:27.200 --> 10:34.170
+Now we have build a second equation I will change a step and put two.
+
+10:34.180 --> 10:40.520
+For example 30 which means a pump of certain millimeters.
+
+10:40.660 --> 10:42.430
+And now I can run as a modern
+
+10:47.900 --> 10:56.130
+double click the scoop to see the response of the Chelsea as you can see after one second we hits a
+
+10:56.130 --> 11:05.010
+pump of certainty that Chelsea is up to maybe forty two and because of is of them being as emotion is
+
+11:05.010 --> 11:09.090
+being dammed if I look at the response of the suspension
+
+11:14.810 --> 11:22.490
+this is the response of the suspension we have some oscillation until tempt I can change the value of
+
+11:22.580 --> 11:26.450
+the then being coefficient for example to 20
+
+11:30.170 --> 11:35.340
+and I will runs on model again.
+
+11:35.380 --> 11:43.320
+Now let's see is the response of the Chelsea again in motion is being damped and this is the response
+
+11:43.350 --> 11:51.450
+of the tyre we have also some oscillation that's for example tried to increase that I mean coefficient
+
+11:55.330 --> 12:08.460
+from runs a model and check the response of the suspension system now as you can see is isolation is
+
+12:08.460 --> 12:17.730
+almost come and this is also the response of the testing we have here are some isolation this is all
+
+12:17.730 --> 12:19.590
+forces with you thank you guys for watching.
+
+12:19.590 --> 12:24.990
+In the next review we are going to look at the same problem but this time instead of modeling it in
+
+12:24.990 --> 12:29.020
+time domain we will model it in its domain using transfer functions.
+
+12:29.040 --> 12:30.150
+So see you there.

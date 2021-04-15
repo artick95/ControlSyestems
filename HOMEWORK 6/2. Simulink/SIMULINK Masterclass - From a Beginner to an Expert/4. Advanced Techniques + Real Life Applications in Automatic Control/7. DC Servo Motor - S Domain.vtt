@@ -1,0 +1,178 @@
+WEBVTT
+
+00:00.210 --> 00:01.920
+Welcome back guys.
+
+00:01.920 --> 00:07.950
+So in this lecture I will show you this assignment answer and we are going to simulate the DC a servo
+
+00:07.950 --> 00:14.040
+motor in Samuel link but this time an estimate by using transfer functions.
+
+00:14.160 --> 00:18.230
+So first is assignment answer from the previous lecture we have.
+
+00:18.230 --> 00:22.940
+These equations in XYZ domain you have vehicles to I.
+
+00:22.950 --> 00:33.950
+Times are plus SL plus Becky MF Becky MF equals to k b times that seat a lot and talk equals to Katy.
+
+00:33.960 --> 00:38.320
+Times I also talk equals to seats at all times.
+
+00:38.340 --> 00:38.770
+J.
+
+00:38.780 --> 00:40.900
+S plus B.
+
+00:40.950 --> 00:48.840
+So our input here is a voltage by looking at the first equation we will feed the voltage the two something
+
+00:48.900 --> 00:56.430
+point the voltage signal B and plus and there is another signal in minus which is a Becky M F signal
+
+00:58.260 --> 01:08.600
+voltage minus spec IMF equals two ie times are plus says l so I will multiply by one over R Plus SL
+
+01:08.960 --> 01:11.140
+to produce I.
+
+01:11.780 --> 01:20.330
+Now by looking at the third equation we have eye times Katie equals to talk from this equation and from
+
+01:20.330 --> 01:29.330
+last equation if I multiplied the torque times 1 over J S plus P I will produce seat that now I can
+
+01:29.330 --> 01:35.560
+take the signal off a seat of thought and multiplied by KP In the second equation to produce is about
+
+01:35.600 --> 01:44.150
+IMF and Becky MF can be seated to this summing point in order to produce I as you can see in the first
+
+01:44.150 --> 01:45.140
+equation.
+
+01:45.140 --> 01:51.890
+So this is a block diagram or modelling is a system in the s domain is very simple and very easy.
+
+01:51.980 --> 01:59.750
+I want you to write down this model because we will use these blocks in our assembling model moving
+
+01:59.750 --> 02:00.900
+to the semi link.
+
+02:00.910 --> 02:05.960
+Now I have created this new model from the commonly used blocks.
+
+02:06.200 --> 02:11.390
+I will add gain constant and scoop.
+
+02:11.430 --> 02:17.910
+I will also add something point and from continuous I will add transfer function
+
+02:24.960 --> 02:28.740
+I will use the same and file from the previous video.
+
+02:28.830 --> 02:36.620
+This is my file which contains the different values or different system parameters or L key TKD the
+
+02:36.730 --> 02:38.230
+J.
+
+02:38.610 --> 02:40.260
+Back to the system.
+
+02:40.350 --> 02:49.190
+So first of all I have this input which is constant 5 it's feed it to someone point
+
+02:52.530 --> 02:55.950
+list of signs of the summing point are plus and minus
+
+02:58.900 --> 03:04.690
+and I have to transfer functions so this is the first block of the first transfer function and that
+
+03:04.690 --> 03:09.540
+will feed the signal here and I have two gains.
+
+03:09.600 --> 03:10.650
+This is the first one
+
+03:14.470 --> 03:16.480
+and we have zero as a transfer function
+
+03:21.750 --> 03:31.430
+and from here we have a scoop because this is the output see thought and I can flip this this is the
+
+03:31.440 --> 03:37.730
+K.B. so I will take another signal from here from see the vote multiplied by KP To reduce it by IMF
+
+03:38.150 --> 03:40.580
+and feed it back to the summing point.
+
+03:40.820 --> 03:51.960
+The first transfer function is 1 over plus SL So double take the coefficients are are or sorry.
+
+03:52.000 --> 03:59.510
+L plus or L here would be less and R will be R now.
+
+03:59.670 --> 04:08.800
+Okay now I have one over less plus or the second transfer function is one over G S plus B.
+
+04:08.800 --> 04:16.710
+So this is J and this is B the first gain is Katie.
+
+04:16.730 --> 04:24.550
+So this is Katie and this is K B.
+
+04:24.640 --> 04:31.540
+Now I have a model that you see motor in as domain by using transfer functions which is very efficient
+
+04:31.570 --> 04:33.290
+and very fast.
+
+04:33.310 --> 04:34.550
+Now lets runs a small
+
+04:39.350 --> 04:48.460
+I got an error here because I forgot to run my end file so I will pack and roms and file now run change
+
+04:48.460 --> 04:54.360
+folder and I will pack and run the symbol link model again.
+
+04:54.470 --> 04:57.170
+Now it takes time and simulation so we will wait
+
+05:15.610 --> 05:16.090
+finished.
+
+05:16.090 --> 05:19.930
+Now I can double click the scoop to check the speed of the shaft.
+
+05:28.710 --> 05:31.910
+As you can see this is the velocity of the motor.
+
+05:31.920 --> 05:34.770
+Don't get confused because of this graph.
+
+05:34.770 --> 05:43.980
+Actually it's a constant value of nine point 6 1 5 1 which is the same result as the time domain modelling
+
+05:43.980 --> 05:45.320
+system.
+
+05:45.410 --> 05:51.150
+Double click on the scope here I will find that we have also commerce and value of line by line 6 1
+
+05:51.150 --> 05:52.920
+5 1.
+
+05:52.950 --> 05:54.540
+That's all for this review.
+
+05:54.540 --> 05:56.300
+Thank you guys for watching.
+
+05:56.360 --> 06:01.230
+The next review we will look at its API controller and similar link so see user.

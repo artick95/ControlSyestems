@@ -1,0 +1,91 @@
+WEBVTT
+
+00:01.800 --> 00:05.140
+In the previous view we've built a sine wave model.
+
+00:05.430 --> 00:11.560
+The model produces a signal through sine wave source block and the signal is shown on a graph.
+
+00:11.700 --> 00:14.180
+By using the scoop sync.
+
+00:14.190 --> 00:20.400
+Now let's add a gain to the signal a gain is a constant numbers that is multiplied to the output of
+
+00:20.400 --> 00:21.170
+the signal.
+
+00:21.210 --> 00:27.740
+In this model we will amplify the sine wave signal pi three in order to add the gain block.
+
+00:27.750 --> 00:30.000
+I will open the library's window
+
+00:33.510 --> 00:37.380
+from commonly used window drag and drop the game block
+
+00:40.870 --> 00:48.880
+I will delete this connection by simply selecting at them press delete let's drag this here and DOS
+
+00:48.880 --> 00:50.040
+and new connections
+
+00:57.980 --> 01:05.600
+the default value for the gain is 1 in order to change the gain value double click the game plunk block
+
+01:05.630 --> 01:13.210
+parameters window will appear change the gain from 1 2 for example 3.
+
+01:13.240 --> 01:14.350
+Now let's run the model
+
+01:18.310 --> 01:24.580
+as you can see is a sine wave is amplified by a gain of 3 and the amplitude of the signal is Sri
+
+01:29.060 --> 01:32.300
+that's for example changes again to 5
+
+01:37.740 --> 01:40.410
+the amplitude has a change to 5
+
+01:43.800 --> 01:50.520
+if you want for example to show the two graphs of the sine wave signal before and after is a gain at
+
+01:50.520 --> 01:57.960
+the same time we will use a block called mosque or Multiplex or this block can be found in the commonly
+
+01:57.960 --> 02:05.220
+used blocks the purpose of this block is to take more than one signal and combine them into one single
+
+02:05.220 --> 02:11.760
+vector then the output of the mosque block will be the input to the school block in newer versions of
+
+02:11.760 --> 02:18.570
+similar lings the scoop block can be modified to take more than one input anyways I'm using MATLAB 2013
+
+02:18.660 --> 02:20.850
+which I think doesn't have this option
+
+02:25.850 --> 02:27.810
+I will drag and drop the mosque block
+
+02:35.240 --> 02:36.950
+I will remove all connections
+
+02:39.990 --> 02:45.740
+the first input to the mosque is the input of the game block the second input is a sine wave signal
+
+02:45.990 --> 02:54.090
+so I will right click the output of the sine wave and drag it to the mosque block to create a duplicate
+
+02:54.120 --> 02:55.650
+to the sine wave signal.
+
+02:56.070 --> 03:03.140
+Finally is Albert of the mosque block is displayed in the school block now runs a model
+
+03:06.260 --> 03:12.620
+as you can see we have the two graphs of the two signals the old one was amplitude equals to one and
+
+03:12.620 --> 03:15.680
+the new one was amplitude equals to five.

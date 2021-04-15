@@ -1,0 +1,100 @@
+WEBVTT
+
+00:00.960 --> 00:05.770
+In this lecture I'm going to do the most medical modelling of hydraulic systems I'll discuss liquid
+
+00:05.770 --> 00:13.430
+level systems because they are frequently used in process control the following figures shows the different
+
+00:13.430 --> 00:15.470
+components of the hydraulic system.
+
+00:15.470 --> 00:22.850
+This thing is being filled with water shrew evolve a city state floor rate Q capital is being changed
+
+00:22.850 --> 00:28.550
+with a small amount Q Small live by the city seat height each capital is a change the small amount is
+
+00:28.590 --> 00:35.090
+a small thing has a capacitance C and is connected to another valve which has a resistance or the flow
+
+00:35.090 --> 00:43.010
+rate that exists from the valve as Q capital plus q small o enormous minigun mouldering we are considering
+
+00:43.040 --> 00:49.310
+only Q Small as an A Smalls what I'm dealing was a steady state mouldering their existence R equals
+
+00:49.310 --> 00:56.090
+to change and level difference over change in flow rate so for this involves a level difference is a
+
+00:56.090 --> 01:02.720
+difference between the height before us evolve and afters evolve which is a small minus zero the change
+
+01:02.720 --> 01:09.980
+in flow rate is the flow rate that runs in size evolve which is Q Small or so is a value equation is
+
+01:10.010 --> 01:18.830
+each one as you equals two are Q all four is a capacitance C is a change in liquids stored over is a
+
+01:18.830 --> 01:26.330
+change in head for this thing the change in head as the h by the T as we stated before and the change
+
+01:26.330 --> 01:35.420
+in liquids stored as Q I minus Q All the equation was this thing is Q I minus Q o equals to C etch thought
+
+01:39.290 --> 01:46.250
+let's see an example in this example we have to thank Stan Kwan was H1 Q AI is entering this tank and
+
+01:46.250 --> 01:54.230
+this thing has a question C Well those are tank has 2 and c 2 and is being felt was Q1 Q2 runs out from
+
+01:54.230 --> 02:02.650
+this think there are two valves was to resistance are 1 and are 2 for the first tank Q ie minus Q o
+
+02:02.650 --> 02:10.840
+equals two C1 each one got the first valve etched before minus etch after equals 2 are times a Q which
+
+02:10.840 --> 02:12.040
+runs in the valve.
+
+02:12.100 --> 02:23.280
+So each one minus Edge 2 equals 2 Q1 times are 1 the second tank Q1 minus Q2 equals to see 2 times Edit
+
+02:23.290 --> 02:32.170
+2 adult the second evolve hide before is 2 minus hide after is 0 equals 2 cuz it runs inside this valve
+
+02:32.290 --> 02:39.330
+which is Q2 times evolve resistance which are 2 taking the plus transformation of these equations Q
+
+02:39.330 --> 02:39.970
+ie.
+
+02:40.000 --> 02:49.720
+Capital of S minus Q of S equals two C1 times H1 times s s capital 1 minus H capital 2 equals 2 Q capital
+
+02:49.720 --> 02:58.570
+1 times are 1 q Capital One minus Q capital 2 equals to see to each two times S H two equals to Q2 times
+
+02:58.600 --> 03:00.040
+are two.
+
+03:00.040 --> 03:06.400
+Now let's throw the block diagram of these equations First we need to define what is the inputs and
+
+03:06.520 --> 03:16.360
+output of this system is the input is Q AI and output is q to q AI is entering the block diagram minus
+
+03:16.450 --> 03:28.750
+Q 1 produces C1 H1 s and to produce each one we will multiply by 1 over C1 s now subtract H1 from H
+
+03:28.750 --> 03:38.800
+two so each to minus each one at 1 and minus an inch 2 in plus equals 2 q 1 times are 1 multiply by
+
+03:38.890 --> 03:48.880
+1 over our 1 2 produce signal q 1 Now subtract signal Q2 from signal Q1 so Q1 minus Q2 is C two times
+
+03:49.210 --> 03:57.880
+two times s multiply by one over a C two are two s to produce output Q2 now wearing all the feedback
+
+03:57.880 --> 04:06.010
+signals Q2 which is multiplied by our 2 to produce H2 and finally is a Q1 signal.

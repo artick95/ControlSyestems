@@ -1,0 +1,79 @@
+WEBVTT
+
+00:00.270 --> 00:02.880
+Subsystems and more complex modelling.
+
+00:02.880 --> 00:09.960
+We may need to make subsystems which means you take a part off your model to create a subsystems that
+
+00:09.960 --> 00:11.820
+has a certain function.
+
+00:11.820 --> 00:18.500
+Your pig model can now be reduced to some small modules that have inputs and produce outputs.
+
+00:18.510 --> 00:20.980
+For example the transmission system of a car.
+
+00:21.030 --> 00:28.800
+We may have an input from the engine that enters a subsystem of a gearbox and the object goes to another
+
+00:28.800 --> 00:31.700
+subsystem which is a differential and so on.
+
+00:31.710 --> 00:34.310
+So how to make is subsystem.
+
+00:34.320 --> 00:37.830
+Here we have what we call a p idea controller.
+
+00:37.830 --> 00:43.500
+If you're not familiar with the p idea controller you can check that patch PDA if any way.
+
+00:43.500 --> 00:49.580
+Consider this like any other system and we want to create a subsystem from this system.
+
+00:49.650 --> 00:57.810
+Just select all the system right click Create some system from selections or control plus e.g. now a
+
+00:57.810 --> 00:59.400
+subsystem is created.
+
+00:59.430 --> 01:04.050
+If I double click the system you will find our old systems API view controller.
+
+01:04.050 --> 01:11.610
+You will notice that two more plots were added to the system inputs one or in one block and output one
+
+01:11.730 --> 01:16.680
+block in subsystem we cannot leave the inputs and outputs signals empty.
+
+01:16.770 --> 01:23.140
+So we add or similar link automatically add these blocks which are referenced in our model.
+
+01:23.160 --> 01:26.550
+As you can see there is input 1 and output 1.
+
+01:26.550 --> 01:33.990
+So when we add input in our project it will be runs a subsystem without any problem and output one will
+
+01:33.990 --> 01:37.730
+be taken from this subsystem to our project.
+
+01:37.830 --> 01:42.900
+There is another way to make subsystems simply by adding a subsystem plug.
+
+01:43.260 --> 01:46.350
+If you want to find it quickly search for subsystem
+
+01:49.150 --> 01:51.460
+right click Add to Untitled.
+
+01:51.580 --> 02:02.730
+Now for example I can create my module inside the system or simply copy and paste an existing one I
+
+02:02.730 --> 02:10.080
+will delete those inputs and outputs signals and my input and output signals to my second systems are
+
+02:10.080 --> 02:12.000
+input to an output to.

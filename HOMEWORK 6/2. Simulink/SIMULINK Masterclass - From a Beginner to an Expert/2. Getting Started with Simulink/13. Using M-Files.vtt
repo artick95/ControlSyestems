@@ -1,0 +1,130 @@
+WEBVTT
+
+00:00.240 --> 00:06.000
+Along with your students and welcome to this new lecture in which I will teach you how to use m files
+
+00:06.090 --> 00:07.790
+into your simulation model.
+
+00:07.830 --> 00:16.140
+So here I have this model which is step block here multiplied to gain 0 five and the results is plotted
+
+00:16.230 --> 00:17.360
+using this scoop.
+
+00:17.820 --> 00:28.130
+So if I run this model for three seconds I have this plot of a scoop of step with five.
+
+00:28.280 --> 00:35.450
+In some cases it's better to define the value of your gains or different variables of your system in
+
+00:35.490 --> 00:42.800
+workspace or using and files so that when you need to change these variables you don't change them in
+
+00:42.800 --> 00:46.290
+your Samuel link model because this work will be exhausting.
+
+00:46.350 --> 00:53.330
+Steve you change these values in your end file or in your command window so I will show you now how
+
+00:53.330 --> 00:59.030
+to use variables from your command window or m files into your Samuel link model.
+
+00:59.510 --> 01:01.730
+So first I will go to the command window.
+
+01:03.380 --> 01:05.860
+I'll type CLEC to clear.
+
+01:05.990 --> 01:11.410
+Now I will define a variable of a equals 2 for example 5.
+
+01:11.630 --> 01:15.980
+Now as a workspace has a the value is 5.
+
+01:16.850 --> 01:19.660
+I will go back to my Samuel link model.
+
+01:19.660 --> 01:27.470
+I will double click the again and I will change the gain value to a game is not a number now it's a
+
+01:27.470 --> 01:35.210
+variable a I will click OK and wrong my model other than get any error message.
+
+01:35.210 --> 01:44.640
+So my model is okay I will double click this model the step is five if I want for example to change
+
+01:44.640 --> 01:56.320
+the value of a CLEC A equals to three And back to my model again and run the model.
+
+01:56.990 --> 01:59.200
+You'll see that the gain is SRI
+
+02:02.580 --> 02:06.170
+in most cases we don't use workspace to Define variables.
+
+02:06.190 --> 02:09.930
+Instead we use m file to define our variables.
+
+02:09.930 --> 02:19.580
+So I have defined new in file I will call it Samuel link and file define for example variable X equals
+
+02:19.580 --> 02:28.510
+to five variable Y equals two three and z equals 2 6.
+
+02:28.850 --> 02:30.640
+I will save this file.
+
+02:31.280 --> 02:42.720
+X y z save and I will run this file factories or in space I will find that X equals to 5 y equals 2
+
+02:42.720 --> 02:46.350
+3 and z equals to 6.
+
+02:46.350 --> 02:53.420
+Now I will pack to my model the symbol link I will change the variable to X No.
+
+02:53.440 --> 02:59.560
+K runs a model the scope shows a step of 5.
+
+03:00.490 --> 03:04.750
+I can for example type X times Y.
+
+03:04.960 --> 03:07.600
+Okay now run
+
+03:11.210 --> 03:15.050
+its value of three times five which is 15.
+
+03:15.260 --> 03:21.780
+So I can do operations inside the step definition.
+
+03:22.240 --> 03:26.780
+I can say X times Y over Z now.
+
+03:26.800 --> 03:30.120
+K and run the model.
+
+03:33.410 --> 03:38.230
+And I have this value of 2.5 which is 15.
+
+03:38.240 --> 03:46.410
+Over 6 it's more easier to use m files in your model instead of defining your different variables as
+
+03:46.410 --> 03:48.920
+values inside your Samuel link model.
+
+03:48.930 --> 03:55.080
+As I have stated before it's very exhausting to change the different values of these variables.
+
+03:55.080 --> 04:02.190
+If you want to change as a model parameters so Steed go to your m file and change different variables.
+
+04:02.190 --> 04:03.480
+That's all for this value.
+
+04:03.480 --> 04:06.010
+Thank you guys for watching and see you in the next week.
+
+04:06.020 --> 04:06.250
+You.

@@ -1,0 +1,244 @@
+WEBVTT
+
+00:00.900 --> 00:02.270
+Before going to simulate.
+
+00:02.330 --> 00:08.540
+It's very important to understand the concept of mathematical modelling of some systems and engineering.
+
+00:08.550 --> 00:13.840
+We have a giving system which can be mechanical electrical hydraulic and simple.
+
+00:13.980 --> 00:18.860
+In some cases a system can have for example mechanical and electric components.
+
+00:18.860 --> 00:24.630
+We apply as a related physical concept to rides a mathematical equations that governs a system.
+
+00:24.630 --> 00:30.010
+These equations can be used for further modelling techniques like process modelling actually simulate
+
+00:30.020 --> 00:35.930
+because a tool to create a process modeling for a giving system in this lecture you are going to look
+
+00:35.930 --> 00:39.090
+at the mess medical modelling of some mechanical systems.
+
+00:39.170 --> 00:45.540
+You will learn how to write them as medical equations and then how to find this transfer function in
+
+00:45.540 --> 00:48.420
+mechanical systems are some important components.
+
+00:48.440 --> 00:51.330
+Zohar spring damper and mass.
+
+00:51.450 --> 00:54.660
+Spring is a mechanical element that resists motion.
+
+00:54.660 --> 01:02.430
+The spring has a constant K and two ends each and has a certain displacement the resistant force developed
+
+01:02.430 --> 01:07.640
+by a spring according to hawks low F S equals to k times delta.
+
+01:07.680 --> 01:15.030
+The spring exerts force if only users are different in displacement between its two ends at Ember.
+
+01:15.170 --> 01:19.690
+Same as the springs the number has of them being coefficient C and two ends.
+
+01:19.690 --> 01:27.070
+The number force F D equals to C times delta velocity which means that the number only exerts force
+
+01:27.120 --> 01:33.030
+if there is a change in velocity and their sheer force before talking about in their sheer force.
+
+01:33.030 --> 01:37.830
+I need to say that there is a big debate in considering an issue of force a real force.
+
+01:37.830 --> 01:44.400
+I don't believe that inertia forces are real forces and this helps me a lot to modern mechanical systems
+
+01:44.400 --> 01:45.330
+very easily.
+
+01:45.330 --> 01:47.500
+However it's not our subject.
+
+01:47.670 --> 01:54.150
+MSM has emotion for example why instead of direction and in their sheer force is developed and equals
+
+01:54.150 --> 01:59.540
+to mass times acceleration or NY that will dots in the other direction.
+
+01:59.580 --> 02:03.940
+These are linear components which means they are related to linear emotion.
+
+02:03.960 --> 02:09.030
+There are also rotating elements like torsion a spring or rotating damper and inertia.
+
+02:09.050 --> 02:14.030
+There are resisting rotating motion and mathematical modelling of mechanical systems.
+
+02:14.040 --> 02:18.070
+We write the equation of motion for each mass or inertia element.
+
+02:18.120 --> 02:26.260
+We do that by drawing the free body that Graham and analyzing the forces using Newton's second law.
+
+02:26.330 --> 02:28.600
+Let's see an example in this example.
+
+02:28.610 --> 02:31.940
+A mass m has a motion y in the right direction.
+
+02:31.970 --> 02:38.690
+The mass is connected to a member which is mounted on the wall and to a spring the spring 2nd end is
+
+02:38.690 --> 02:44.590
+moving was displacement X which is input by throwing a free but at the Graham of mass m.
+
+02:44.620 --> 02:51.650
+There are three forces inertia of force which equals two m y double dots spring force which is K times.
+
+02:51.650 --> 02:58.640
+Delta and Delta here is Y minus X then being forced which is equals to see y dot.
+
+02:58.640 --> 03:06.250
+Now summing all the forces including this in your sheer force and equal all forces to zero I want to
+
+03:06.250 --> 03:12.010
+say that according to Newton's Second low the summation of all the forces in a moving body equals to
+
+03:12.010 --> 03:13.740
+mass times acceleration.
+
+03:13.750 --> 03:20.280
+But I'm using that embedded concept which is considering any moving system is a balanced system or the
+
+03:20.290 --> 03:25.260
+term of their sheer force is a force that balances the system.
+
+03:25.270 --> 03:31.390
+So the sum mission of all forces including the inertia of force equals to zero in order to make sure
+
+03:31.390 --> 03:33.190
+that the equation of motion is correct.
+
+03:33.190 --> 03:38.950
+Always make sure that the mass motion terms why why adults and why they will not have the same sign
+
+03:39.670 --> 03:46.150
+now running down the equation of motion and why double thoughts plus Seaway plus K times why minus X
+
+03:46.180 --> 03:52.930
+equals to zero or m y there's a lot plus you thought plus K Y equals two K X in order to complete the
+
+03:52.930 --> 03:57.430
+mass medical modelling and move to process modelling using plug that grandma will take is an A plus
+
+03:57.430 --> 04:05.170
+transformation of this equation so m y the DOT is M S A SQUARE Y Capital C I thought is C S Y capital
+
+04:05.440 --> 04:13.510
+K why is K Y capital K X is K X capital as you can see is a differential equation is now and then Djibril
+
+04:13.540 --> 04:20.800
+equation and it's easy to write down just transfer function which is output overs and but by thinking
+
+04:20.800 --> 04:28.150
+y capital as a common factor y times MSA squared plus C S plus k equals two K X Y over x equals two
+
+04:28.150 --> 04:31.090
+K over MSA squared plus C S plus K
+
+04:37.420 --> 04:42.610
+let's see another example this example is nothing but the previous problem but instead of linear motion
+
+04:42.610 --> 04:49.900
+is a rotating motion we have here in there she had J and a rotating member C torsion is spring K which
+
+04:49.900 --> 04:57.150
+is a flexible shaft that post ends are rotating in a different angles see the eye and said oh just creates
+
+04:57.150 --> 05:06.300
+an existing torque end but as I said I the rotation of inertia is cedar Oh now write downs a torque
+
+05:06.300 --> 05:09.030
+equation based on the free but a diagram.
+
+05:09.120 --> 05:18.200
+Same as the force the equation of motion J C the O double lot plus C C the O dot plus K time C to o
+
+05:18.200 --> 05:27.050
+minus C I equals 2 0 j you see it oh double dot plus C C the O dot plus k c the O equals to K CDI by
+
+05:27.050 --> 05:34.310
+taking the plus transformation of this equation and ordering the terms C the O overseas I equals 2 k
+
+05:34.310 --> 05:43.270
+over J as a squared plus C S plus k.
+
+05:43.430 --> 05:49.820
+Now let's move to process modelling techniques using plot diagram which is very similar to simulating
+
+05:49.970 --> 05:56.000
+in some cases it's easier to express them as medical equations in a block for the main function of this
+
+05:56.000 --> 06:03.560
+block is to show exactly is a process that is needed to go from input to output to block that Grams
+
+06:03.650 --> 06:10.340
+consists of arrows or signals rectangular blocks and summing blocks let's see an example.
+
+06:10.430 --> 06:18.770
+This is a block diagrams that relates the input x does output y output Y equals two B times A times
+
+06:18.890 --> 06:25.160
+X minus Y times C A B and C are some sorts of operations.
+
+06:25.430 --> 06:27.570
+Let's examine this equations.
+
+06:27.890 --> 06:32.430
+Y equals to a signal B which is multiplied by another signal a.
+
+06:32.480 --> 06:40.790
+So these strict angled blocks represents a and b a line that goes from A to B means is that A is multiplied
+
+06:40.790 --> 06:49.220
+by B B A is multiplied by another signal called X minus Y C which means take an arrow or signal from
+
+06:49.490 --> 06:56.870
+output y multiplied by a block called C and the result is subtracted from the input x using a summation
+
+06:56.870 --> 07:04.700
+pluck the final the result is X minus Y C so lets follows this plot that gram an input x is entering
+
+07:04.700 --> 07:12.830
+that a gram X signal is subtracted from Y C to produce x minus y c x minus y c is multiplied by a and
+
+07:12.830 --> 07:20.720
+Z multiplied by B the result is Y equals to be a times x minus y see the Y signal is defeated back to
+
+07:20.720 --> 07:30.260
+complete and closes a block diagram Y is and multiplied by C let's apply this on our two examples.
+
+07:30.280 --> 07:36.360
+Now you can think of how easy becomes after taking a plus transformation of the equation of motion it's
+
+07:36.380 --> 07:42.610
+a block diagram of post examples is a simplest form of any plug diagram and the first example is the
+
+07:42.700 --> 07:48.110
+input x signal is multiplied by this transfer function to produce output y.
+
+07:48.280 --> 07:52.150
+The second example is the same the input signal is see the eye.
+
+07:52.210 --> 07:58.870
+That is multiplied by as the transfer function K over J as a squared plus C S plus K to produce the
+
+07:58.900 --> 08:00.160
+output CDO.

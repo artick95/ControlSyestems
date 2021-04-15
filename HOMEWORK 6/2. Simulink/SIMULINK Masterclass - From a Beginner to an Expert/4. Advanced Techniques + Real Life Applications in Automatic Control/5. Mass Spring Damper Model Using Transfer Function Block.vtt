@@ -1,0 +1,136 @@
+WEBVTT
+
+00:01.380 --> 00:08.250
+In some cases you need to simplify your model so using XYZ domain transfer function can make a complex
+
+00:08.250 --> 00:11.820
+model which contains so many blocks much more easier.
+
+00:11.820 --> 00:15.330
+In this lecture I'm going to repeat the spring damping system problem.
+
+00:15.420 --> 00:23.590
+But in this time by using transfer function proc by looking at the system equations again in time domain
+
+00:23.860 --> 00:32.560
+and why a lot plus C white dot plus K times Y minus X equals to zero in s domain MSA squared y plus
+
+00:32.560 --> 00:36.430
+C S Y plus K Y equals two K X.
+
+00:36.430 --> 00:46.280
+So the transfer function of the system is y over x equals two K over MSA squared plus C S plus K and
+
+00:46.280 --> 00:49.990
+Samuel link we can use a transfer function directly from the library.
+
+00:50.000 --> 00:55.300
+So as you can see this model is a previous model of the time domain equations.
+
+00:55.370 --> 01:01.160
+I will forms as domain model by using controls for function and compares the results of past models
+
+01:03.120 --> 01:06.990
+from the continuous blocks drag and drop transfer function block
+
+01:10.950 --> 01:13.090
+double click the transfer function block.
+
+01:13.140 --> 01:16.830
+Here we can add post as a numerator and denominator.
+
+01:16.830 --> 01:21.930
+In our example the numerator is k equals to forty thousands
+
+01:26.130 --> 01:30.020
+and the denominator coefficients are 25 for a c squared.
+
+01:30.060 --> 01:33.030
+One hundred and fifty four S and forty thousand
+
+01:37.490 --> 01:39.360
+I will expend this.
+
+01:39.490 --> 01:43.090
+As you can see the transfer function has been added and defined.
+
+01:43.090 --> 01:46.180
+Now I will feed the input signal to the transfer function
+
+01:50.450 --> 01:56.390
+what I'm going to do is I will add three scoops the first one to plug the output of the transfer function
+
+01:56.450 --> 01:59.450
+as well as the output of the time domain simulation.
+
+01:59.450 --> 02:05.150
+The other one to plugs the output of the transfer function only in the last one to plot the output of
+
+02:05.150 --> 02:07.190
+the time domain simulation.
+
+02:07.190 --> 02:08.330
+So let's do that
+
+02:15.070 --> 02:21.210
+our drag and drop marks block now wiring pull signals
+
+02:29.330 --> 02:30.350
+three scoops
+
+02:33.260 --> 02:36.900
+this one here.
+
+02:37.120 --> 02:38.170
+This is here
+
+02:42.180 --> 02:43.990
+and finally is this one.
+
+02:43.990 --> 02:47.610
+Now let's runs a model.
+
+02:47.830 --> 02:49.690
+This is available from the transfer function.
+
+02:49.690 --> 02:51.790
+The oscillations are but as you can see
+
+02:55.500 --> 02:57.240
+these results are almost the same.
+
+02:57.240 --> 03:04.900
+Of the time domain results the plot of both signals is the same graph as you can see is they are almost
+
+03:04.900 --> 03:06.650
+the same and cover each other.
+
+03:09.070 --> 03:15.130
+You can also look as the results as numbers in a steed of graphs so we can have a better idea of the
+
+03:15.130 --> 03:16.360
+error between two methods.
+
+03:16.450 --> 03:19.570
+So our drag and drop to smallpox
+
+03:29.190 --> 03:42.860
+I would close is a and this one be now runs a model in the workspace type A the data to get the results
+
+03:42.920 --> 03:44.060
+of the time domain
+
+03:47.560 --> 03:51.310
+and be the data to give us the results of the transfer function
+
+03:58.050 --> 04:00.710
+as you can see as the results are always the same.
+
+04:00.720 --> 04:02.970
+If you are correct it took four digits.
+
+04:02.970 --> 04:11.130
+You can also define error equals to a minus B and as you can see the error is too small between the
+
+04:11.130 --> 04:12.000
+two models.
